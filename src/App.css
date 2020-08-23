@@ -1,18 +1,181 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Global */
 .root {
-  background-color: #282c34;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  letter-spacing: .1em;
   color: white;
 }
+/* Header */
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,.8);
+  width: 100vw;
+  min-height: 5em;
+  text-align: center;
+}
+.top-sub {
+  padding: .5em;
+  margin: .5em;
+  color: rgba(255,255,255,0.87);
+}
+.top-sub.left {
+}
+.top-sub.center {
+}
+.top-sub.right {
+}
+/* Pages Global */
+.sector {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 100vw;
+  height: 100vh;
+}
 
+/* Page One */
+.sector.one {
+  width: 100vw;
+  height: calc(100vh - 5em);
+  background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);  
+  
+}
+.sector.one.layer{
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: calc(12px + 2vmin);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+/* Page Two */
+.sector.two {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/images/catch.jpg');
+  background-size: cover;
+  color: black;
+}
+.two.text {
+  margin: 0.5em;
+  padding: 0.5em;
+  letter-spacing: .1em;
+  font-size: calc(12px + 2vmin);
+  font-weight: 400;
+}
+.title {
+  text-transform: uppercase;
+}
+.title{
+  transition: all .2s ease-in-out; 
+  font-weight: 500;
+}
+.title:hover {
+  transform: scale(1.3);
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+/* Page Three */
+.sector.three {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255,255,0,.2);
+}
+.three.text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 30vw;
+  min-width: 400px;
+}
+.card {
+  margin: .5em;
+  padding: .5em;
+  text-align: center;
+}
+.card-title {
+  text-transform: uppercase;
+  font-size: calc(12px + 2vmin);
+  font-weight: 400;
+}
+.box {
+  border: 2px solid black;
+}
+.music {
+  background-image: url('/images/music/discovery.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.thriller {
+  background-image: url('/images/thrillers/enemy.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.game {
+  background-image: url('/images/games/rusviet.jpg');
+  background-size: cover;
+}
+.box {
+  position:relative;
+}
+.box:after {
+  content:'\A';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+  opacity:0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 1;
+}
+.box:hover:after {
+  opacity:1;
+}
+.card-info .card-title{
+  transition: all .2s ease-in-out; 
+  font-weight: 500;
+}
+.card-info:hover {
+  transform: scale(1.3);
+}
+.card {
+  visibility: hidden;
+}
+.box:hover .card {
+  visibility: visible;
+  z-index: 2;
+}
+
+/* Page Four */
+.sector.four {
+  background-color: rgba(0,255,255,.2);
+}
+/* Page Five */
+.sector.five {
+  background-color: rgba(255,0,255,.2);
+}
