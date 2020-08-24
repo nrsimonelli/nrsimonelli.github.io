@@ -17,19 +17,16 @@
   align-items: center;
   background-color: rgba(0,0,0,.8);
   width: 100vw;
-  min-height: 5em;
+  min-height: 8em;
   text-align: center;
 }
 .top-sub {
-  padding: .5em;
-  margin: .5em;
+  padding: 0.5em;
+  margin: 0.5em;
   color: rgba(255,255,255,0.87);
 }
-.top-sub.left {
-}
-.top-sub.center {
-}
-.top-sub.right {
+.link {
+  margin: .2em;
 }
 /* Pages Global */
 .sector {
@@ -43,7 +40,7 @@
 /* Page One */
 .sector.one {
   width: 100vw;
-  height: calc(100vh - 5em);
+  height: calc(100vh - 8em);
   background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);  
   
 }
@@ -54,9 +51,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0.5em;
-  padding: 0.5em;
+  justify-content: space-around;
+ 
 }
 /* Page Two */
 .sector.two {
@@ -75,16 +71,27 @@
   letter-spacing: .1em;
   font-size: calc(12px + 2vmin);
   font-weight: 400;
+  color: white;
+  visibility: visible;
+  z-index: 2;
 }
 .title {
   text-transform: uppercase;
-}
-.title{
   transition: all .2s ease-in-out; 
   font-weight: 500;
 }
 .title:hover {
   transform: scale(1.3);
+}
+.title-dark{
+  width: 100%;
+  height: 2em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em .5em .5em .5em;
+  padding: .5em;
+  cursor: default;
 }
 
 a {
@@ -98,7 +105,18 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(255,255,0,.2);
+  background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%); 
+  height: 400vh;
+
+}
+@media(max-width:841px){
+  .sector.three {
+    height: 800vh;
+  }
+  .sector.four {
+    height: 200vh;
+  }
+
 }
 .three.text {
   margin: 0;
@@ -117,16 +135,33 @@ a {
   padding: .5em;
   text-align: center;
 }
-.card-title {
+.card-info {
   text-transform: uppercase;
-  font-size: calc(12px + 2vmin);
+  font-size: calc(10px + 2vmin);
   font-weight: 400;
+  letter-spacing: .1em;
 }
 .box {
   border: 2px solid black;
+  margin: .5em;
 }
 .music {
   background-image: url('/images/music/discovery.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.music-2 {
+  background-image: url('/images/music/unknownpleasures.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.book {
+  background-image: url('/images/books/wildsheep.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.book-2 {
+  background-image: url('/images/books/dune.png');
   background-position: center;
   background-size: cover;
 }
@@ -135,8 +170,18 @@ a {
   background-position: center;
   background-size: cover;
 }
+.thriller-2 {
+  background-image: url('/images/thrillers/witch.jpg');
+  background-position: center;
+  background-size: cover;
+}
 .game {
   background-image: url('/images/games/rusviet.jpg');
+  background-size: cover;
+}
+.game-2 {
+  background-image: url('/images/games/ds.jpg');
+  background-position: center;
   background-size: cover;
 }
 .box {
@@ -161,6 +206,7 @@ a {
   font-weight: 500;
 }
 .card-info:hover {
+  transition: all .2s ease-in-out; 
   transform: scale(1.3);
 }
 .card {
@@ -170,12 +216,127 @@ a {
   visibility: visible;
   z-index: 2;
 }
+.container {
+  position:relative;
+}
+.container:after {
+  content:'\A';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+  opacity:1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 1;
+}
+
 
 /* Page Four */
-.sector.four {
-  background-color: rgba(0,255,255,.2);
+.x{
+  border: 2px solid black;
 }
+.sector.four {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+.project-title {
+  width: 40vw;
+  margin: .5em;
+  padding: .5em;
+}
+.page-title {
+  width: 80vw;
+  margin: .5em;
+  padding: .5em;
+  text-transform: uppercase;
+}
+.project-card {
+  width: 40vw;
+  height: 60vh;
+  min-width: 400px;
+  margin: .5em;
+}
+.project-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solo {
+  background-image: url('/images/chemex.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.solo-text {
+  
+}
+.project-card {
+  position:relative;
+}
+.project-card:after {
+  content:'\A';
+  position:absolute;
+  width:100%; height:100%;
+  top:0; left:0;
+  background:rgba(0,0,0,0.6);
+  opacity:0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 1;
+}
+.project-card:hover:after {
+  opacity:1;
+}
+.solo-text {
+  transition: all .2s ease-in-out; 
+  font-weight: 500;
+}
+.solo-text:hover {
+  transition: all .2s ease-in-out; 
+  transform: scale(1.3);
+}
+.solo-text {
+  visibility: hidden;
+}
+.project-card:hover .solo-text {
+  visibility: visible;
+  z-index: 2;
+}
+.group {
+  background-image: url('/images/soon.jpg');
+  background-position: center;
+  background-size: cover;
+
+}
+.base {
+  width: 80vw;
+}
+
 /* Page Five */
 .sector.five {
-  background-color: rgba(255,0,255,.2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%); 
+  text-align: center; 
+}
+.fat-div {
+  width: 90vw;
+  margin: .5em;
+  padding: .5;
+}
+.icons {
+  width: 30vw
 }
