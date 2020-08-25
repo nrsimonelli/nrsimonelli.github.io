@@ -61,8 +61,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-image: url('/images/catch.jpg');
+  background-image: url('/images/run.jpeg');
   background-size: cover;
+  /* background-position: center; */
   color: black;
 }
 .two.text {
@@ -109,14 +110,15 @@ a {
   height: 400vh;
 
 }
-@media(max-width:841px){
+@media screen and (max-width:840px){
   .sector.three {
     height: 800vh;
   }
+}
+@media screen and (max-width:860px){
   .sector.four {
-    height: 200vh;
+    min-height: 200vh;
   }
-
 }
 .three.text {
   margin: 0;
@@ -245,7 +247,6 @@ a {
   background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);
   text-align: center;
   height: 100vh;
-  width: 100vw;
 }
 .project-title {
   width: 40vw;

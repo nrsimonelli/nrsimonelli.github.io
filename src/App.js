@@ -41,7 +41,8 @@ function App() {
             <div className='two text title'><a href='https://subzeroultimate.com' target='blank'>Minneapolis Ultimate Club</a></div>
           </div>
         </div>
-        <div className='sector four'>
+
+        <div className='sector four pro-page'>
           <div className='four page-title'>Professional Portfolio</div>
           <div className='four title project-title'><a href='https://github.com/nrsimonelli' target='blank'>solo project</a></div>
           <div className='four title project-title'>group project</div>
@@ -56,8 +57,9 @@ function App() {
               <div className='group-text'></div>
             </div>
           </div>
-          <div className='base'></div>
-
+          <div className='base'>
+            
+          </div>
         </div>
         
         <div className='sector three'>
