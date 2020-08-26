@@ -61,7 +61,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-image: url('/images/run.jpeg');
+  /* background-image: url('/images/flick.jpg'); */
+  background-position: center;
   background-size: cover;
   /* background-position: center; */
   color: black;
