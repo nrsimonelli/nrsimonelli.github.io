@@ -36,12 +36,6 @@ class App extends Component {
       })
       console.log('state = ', this.state.sectorTwoImage)
     } 
-    // if(this.state.sectorTwoImage === 2) {
-    //   this.setState({
-    //     sectorTwoImage: 0,
-    //   })
-    //   console.log('state = ', this.state.sectorTwoImage)
-    // } 
     return console.log('the state was set:', this.state.sectorTwoImage);
   }
 
