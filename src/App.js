@@ -69,6 +69,7 @@ class App extends Component {
             <div className='sector one layer'>
             
             <div>Full Stack Developer</div>
+            <div className='profile-pic'></div>
             <div>Movement Specialist</div>
   
             </div>
@@ -83,9 +84,9 @@ class App extends Component {
           </div>
   
           <div className='sector four pro-page'>
-            <div className='four page-title'>Professional Portfolio</div>
+            <div className='four title page-title'><a href='https://github.com/nrsimonelli' target='blank'>Professional Portfolio</a></div>
             <div className='four title project-title'><a href='https://github.com/nrsimonelli' target='blank'>solo project</a></div>
-            <div className='four title project-title'>group project</div>
+            <div className='four title project-title'><a href='https://github.com/nrsimonelli' target='blank'>group project</a></div>
             <div className='x project-card'>
               <div className='solo project-image'>
                 <div className='solo-text title'><a href='https://enigmatic-stream-39267.herokuapp.com/' target='blank'>
@@ -94,7 +95,8 @@ class App extends Component {
             </div>
             <div className='x project-card'>
               <div className='group project-image'>
-                <div className='group-text'></div>
+                <div className='solo-text title'><a href='https://radiant-bastion-40198.herokuapp.com' target='blank'>
+                  We Sparkle</a></div>
               </div>
             </div>
             <div className='base'>
