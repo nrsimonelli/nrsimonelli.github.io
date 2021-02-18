@@ -13,11 +13,11 @@
 .top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(0,0,0,.8);
   width: 100vw;
-  min-height: 8em;
+  height: 100px;
   text-align: center;
 }
 .top-sub {
@@ -40,7 +40,7 @@
 /* Page One */
 .sector.one {
   width: 100vw;
-  height: calc(100vh - 8em);
+  height: calc(100vh - 100px);
   background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);  
   
 }
@@ -53,6 +53,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
  
+}
+.wide {
+  width: 100%;
+  text-align: center;
 }
 /* Page Two */
 .sector.two {
@@ -113,6 +117,11 @@ a {
 @media screen and (max-width:840px){
   .sector.three {
     height: 800vh;
+  }
+}
+@media screen and (min-width:1100px){
+  .wide {
+    width: 30vw;
   }
 }
 @media screen and (max-width:860px){
@@ -246,7 +255,8 @@ a {
   align-items: center;
   background-image: linear-gradient(to right, #4FACFE 0%, #00F2FE 100%);
   text-align: center;
-  height: 100vh;
+  height: 100%;
+  
 }
 .project-title {
   width: 40vw;
@@ -258,12 +268,14 @@ a {
   margin: .5em;
   padding: .5em;
   text-transform: uppercase;
+  padding-top: 48px;
 }
 .project-card {
   width: 40vw;
   height: 60vh;
   min-width: 400px;
   margin: .5em;
+  margin-top: 24px;
 }
 .project-image {
   height: 100%;
@@ -273,8 +285,8 @@ a {
   justify-content: center;
 }
 .profile-pic {
-  width: 300px;
-  height: 400px;
+  width: 225px;
+  height: 300px;
   border-radius: 50%;
   border: 2px solid white;
   background-image: url('/images/profile.jpg');
@@ -284,6 +296,16 @@ a {
 
 .solo {
   background-image: url('/images/chemex.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.theme {
+  background-image: url('/images/colors.webp');
+  background-position: center;
+  background-size: cover;
+}
+.scythe {
+  background-image: url('/images/bidder.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -342,7 +364,7 @@ a {
 .fat-div {
   width: 90vw;
   margin: .5em;
-  padding: .5;
+  padding: .5em;
 }
 .icons {
   width: 30vw

@@ -50,43 +50,40 @@ class App extends Component {
     return (
       <div className='root'>
         <div className='top'>
-          <div className='top-sub left'><FlashOnIcon /></div>
           <div className='top-sub center'>NICHOLAS SIMONELLI</div>
-          <div className='top-sub right'>
-            <a href='https://www.linkedin.com/in/nicholas-simonelli-6456a590/' target='blank'>
-              <LinkedInIcon className='link' />
-            </a>
-            <a href='https://github.com/nrsimonelli' target='blank'>
-              <GitHubIcon className='link' />
-            </a>
-            <a href='mailto:nrsimonelli@gmail.com' >
-              <EmailIcon className='link' />
-            </a>
-            
-          </div>
         </div>
           <div className='sector one'>
             <div className='sector one layer'>
             
-            <div>Full Stack Developer</div>
+            <div className='wide'>Full Stack Developer</div>
             <div className='profile-pic'></div>
-            <div>Movement Specialist</div>
+            <div className='wide'>Movement Specialist</div>
   
             </div>
             
           </div>
           
           <div className='container'>
-            <div className='sector two' style={{backgroundImage: imageString}}>
+            <div className='sector two' style={{ backgroundImage: imageString }}>
               <div className='two text title'><a href='https://www.youtube.com/watch?v=qsxNIW97RqA' target='blank'>Sub Zero</a></div>
               <div className='two text title'><a href='https://subzeroultimate.com' target='blank'>Minneapolis Ultimate Club</a></div>
             </div>
           </div>
   
           <div className='sector four pro-page'>
-            <div className='four title page-title'><a href='https://github.com/nrsimonelli' target='blank'>Professional Portfolio</a></div>
-            <div className='four title project-title'><a href='https://github.com/nrsimonelli' target='blank'>solo project</a></div>
-            <div className='four title project-title'><a href='https://github.com/nrsimonelli' target='blank'>group project</a></div>
+            <div className='four title page-title'><a href='https://github.com/nrsimonelli' target='blank'>Professional Portfolio<br/> {"&"} <br/>Active Projects</a></div>
+            <div className='x project-card'>
+              <div className='theme project-image'>
+                <div className='solo-text title'><a href='https://dark-magic.herokuapp.com' target='blank'>
+                  Dynamic Themes</a></div>
+              </div>
+            </div>
+            <div className='x project-card'>
+              <div className='scythe project-image'>
+                <div className='solo-text title'><a href='https://scythe-bidder.herokuapp.com/' target='blank'>
+                  Scythe Bidder</a></div>
+              </div>
+            </div>
             <div className='x project-card'>
               <div className='solo project-image'>
                 <div className='solo-text title'><a href='https://enigmatic-stream-39267.herokuapp.com/' target='blank'>
