@@ -3,8 +3,6 @@ import './App.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-import FlashOnIcon from '@material-ui/icons/FlashOn';
-
 
 class App extends Component {
 
@@ -28,15 +26,12 @@ class App extends Component {
       this.setState({
         sectorTwoImage: this.state.sectorTwoImage +1,
       })
-      console.log('state = ', this.state.sectorTwoImage)
     } 
     if(this.state.sectorTwoImage === 3) {
       this.setState({
         sectorTwoImage: 0,
       })
-      console.log('state = ', this.state.sectorTwoImage)
     } 
-    return console.log('the state was set:', this.state.sectorTwoImage);
   }
 
   render(){
@@ -50,59 +45,74 @@ class App extends Component {
     return (
       <div className='root'>
         <div className='top'>
-          <div className='top-sub center'>NICHOLAS SIMONELLI</div>
+          <div className='top-sub'>
+          <div>NICHOLAS SIMONELLI</div>
+          <div>
+          <a href='https://www.linkedin.com/in/nicholas-simonelli-6456a590/' target='blank'>
+                <LinkedInIcon />
+              </a>
+              <a className='margin-20' href='https://github.com/nrsimonelli' target='blank'>
+                <GitHubIcon />
+              </a>
+              <a className='margin-20' href='mailto:nrsimonelli@gmail.com' >
+                <EmailIcon />
+              </a>
+          </div>
+
+          </div>
+          
         </div>
-          <div className='sector one'>
-            <div className='sector one layer'>
-            
-            <div className='wide'>Full Stack Developer</div>
+        <div className='page-one'>
+          <div className='layer'>
+            <div className='wide-l'>
+              Full Stack Developer
+            </div>
             <div className='profile-pic'></div>
-            <div className='wide'>Movement Specialist</div>
-  
-            </div>
-            
-          </div>
-          
-          <div className='container'>
-            <div className='sector two' style={{ backgroundImage: imageString }}>
-              <div className='two text title'><a href='https://www.youtube.com/watch?v=qsxNIW97RqA' target='blank'>Sub Zero</a></div>
-              <div className='two text title'><a href='https://subzeroultimate.com' target='blank'>Minneapolis Ultimate Club</a></div>
+            <div className='wide-r'>
+              Movement Specialist
             </div>
           </div>
+        </div>
   
-          <div className='sector four pro-page'>
-            <div className='four title page-title'><a href='https://github.com/nrsimonelli' target='blank'>Professional Portfolio<br/> {"&"} <br/>Active Projects</a></div>
-            <div className='x project-card'>
-              <div className='theme project-image'>
-                <div className='solo-text title'><a href='https://dark-magic.herokuapp.com' target='blank'>
-                  Dynamic Themes</a></div>
+          <div className='page-two'>
+            <div className='layer-two' id='layer-two'>
+              <div id='override' className='title page-title'>
+                
+                  Portfolio
+                  {" & "} 
+                  Projects
+                
               </div>
-            </div>
-            <div className='x project-card'>
-              <div className='scythe project-image'>
-                <div className='solo-text title'><a href='https://scythe-bidder.herokuapp.com/' target='blank'>
-                  Scythe Bidder</a></div>
+              <div className='x project-card'>
+                <div className='theme project-image'>
+                  <div className='solo-text title'><a href='https://dark-magic.herokuapp.com' target='blank'>
+                    Dynamic Themes</a></div>
+                </div>
               </div>
-            </div>
-            <div className='x project-card'>
-              <div className='solo project-image'>
-                <div className='solo-text title'><a href='https://enigmatic-stream-39267.herokuapp.com/' target='blank'>
-                  Slow Coffee</a></div>
+              <div className='x project-card'>
+                <div className='scythe project-image'>
+                  <div className='solo-text title'><a href='https://scythe-bidder.herokuapp.com/' target='blank'>
+                    Scythe Bidder</a></div>
+                </div>
               </div>
-            </div>
-            <div className='x project-card'>
-              <div className='group project-image'>
-                <div className='solo-text title'><a href='https://radiant-bastion-40198.herokuapp.com' target='blank'>
-                  We Sparkle</a></div>
+              <div className='x project-card'>
+                <div className='solo project-image'>
+                  <div className='solo-text title'><a href='https://enigmatic-stream-39267.herokuapp.com/' target='blank'>
+                    Slow Coffee</a></div>
+                </div>
               </div>
-            </div>
-            <div className='base'>
-              
+              <div className='x project-card'>
+                <div className='group project-image'>
+                  <div className='solo-text title'><a href='https://radiant-bastion-40198.herokuapp.com' target='blank'>
+                    We Sparkle</a></div>
+                </div>
+              </div>
             </div>
           </div>
           
-          <div className='sector three'>
-            <div className='three title-dark'>Other Likes &amp; Interests</div>
+          <div className='page-three'>
+          <div className='layer-two' id='layer-two'>
+            <div id='override' className='three title-dark'>Likes &amp; Interests</div>
             <div className='box'>
               <div className='three text music'>
                 <div className='card card-info'><a href='https://www.youtube.com/watch?v=PTt_G1Ft3yA' target='blank'>Discovery, Daft Punk</a></div>
@@ -140,14 +150,21 @@ class App extends Component {
               </div>
             </div>
             <div className='box'>
+              <div className='three text ultimate'>
+                <div className='card card-info'><a href='https://www.subzeroultimate.com/' target='blank'>Ultimate</a></div>
+              </div>
+            </div>
+            <div className='box'>
               <div className='three text game-2'>
                 <div className='card card-info'><a href='https://www.youtube.com/watch?v=vBJDBtn2MbQ&amp;list=PLWLedd0Zw3c5RCXboUsPwHsZJlXB2CzCz&amp;index=6' target='blank'>Dark Souls, Series</a></div>
               </div>
             </div>
+            </div>
           </div>
           
           
-          <div className='sector five'>
+          <div className='page-five'>
+            <div className='footer'>
             <div className='fat-div'>contact me</div>
               <div className='icons'>
               <a href='https://www.linkedin.com/in/nicholas-simonelli-6456a590/' target='blank'>
@@ -159,9 +176,8 @@ class App extends Component {
               <a href='mailto:nrsimonelli@gmail.com' >
                 <EmailIcon className='link' />
               </a>
-              </div>
-            
-  
+              </div> 
+              </div>           
           </div>
       </div>
     ); // end return
