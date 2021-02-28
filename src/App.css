@@ -17,7 +17,7 @@
   overflow: hidden;
   position: fixed;
   top: 0;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 .top-sub {
@@ -30,7 +30,7 @@
   height: 100%;
   width: calc(100% - 48px);
 }
-.margin-20{
+.margin-20 {
   margin-left: 20px;
 }
 
@@ -46,15 +46,15 @@
   margin-top: 85px;
   /* max-width: 1440px;  */
 }
-.layer{
+.layer {
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8F9 100%); 
+  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
   width: 100%;
   height: 100%;
   max-width: 1140px;
@@ -68,24 +68,9 @@
   text-align: right;
 }
 /* Page Two */
-.sector.two {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-  color: black;
-  min-height: 740px;
-  width: 100vw;
-  max-width: 1440px;
-  
-}
+
 .two.text {
-  margin: 0.5em;
-  padding: 0.5em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-size: calc(12px + 2vmin);
   font-weight: 400;
   color: white;
@@ -94,23 +79,22 @@
 }
 .title {
   text-transform: uppercase;
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
 }
 
-.title-dark{
+.title-dark {
   width: 100%;
   height: 2em;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  margin: 2em .5em .5em .5em;
-  padding: .5em;
   cursor: default;
+  margin-top: 24px;
 }
 
 a {
-  color: inherit; 
-  text-decoration: inherit; 
+  color: inherit;
+  text-decoration: inherit;
 }
 /* Page Three */
 .page-three {
@@ -120,9 +104,10 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: 2px solid black;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   /* .project-card {
     min-width: 400px;
   } */
@@ -132,28 +117,29 @@ a {
   #layer-two {
     display: flex;
     flex-direction: column;
-
+    border: 2px solid yellow;
   }
 }
-@media screen and (max-width:840px){
-  .layer{
+@media screen and (max-width: 840px) {
+  .layer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   .wide-l {
     text-align: center;
+    margin: 0;
   }
   .wide-r {
     text-align: center;
+    margin: 0;
   }
 }
-@media screen and (min-width:841px){
+@media screen and (min-width: 841px) {
   #override {
     text-align: left;
     margin-left: 24px;
   }
-  
 }
 
 .three.text {
@@ -181,72 +167,74 @@ a {
   flex-grow: 1;
 }
 .music {
-  background-image: url('/images/music/discovery.jpg');
+  background-image: url("/images/music/discovery.jpg");
   background-position: center;
   background-size: cover;
 }
 .music-2 {
-  background-image: url('/images/music/unknownpleasures.jpg');
+  background-image: url("/images/music/unknownpleasures.jpg");
   background-position: center;
   background-size: cover;
 }
 .book {
-  background-image: url('/images/books/wildsheep.jpg');
+  background-image: url("/images/books/wildsheep.jpg");
   background-position: center;
   background-size: cover;
 }
 .book-2 {
-  background-image: url('/images/books/dune.png');
+  background-image: url("/images/books/dune.png");
   background-position: center;
   background-size: cover;
 }
 .thriller {
-  background-image: url('/images/thrillers/enemy.jpg');
+  background-image: url("/images/thrillers/enemy.jpg");
   background-position: center;
   background-size: cover;
 }
 .thriller-2 {
-  background-image: url('/images/thrillers/witch.jpg');
+  background-image: url("/images/thrillers/witch.jpg");
   background-position: center;
   background-size: cover;
 }
 .game {
-  background-image: url('/images/games/rusviet.jpg');
+  background-image: url("/images/games/rusviet.jpg");
   background-size: cover;
 }
 .game-2 {
-  background-image: url('/images/games/ds.jpg');
+  background-image: url("/images/games/ds.jpg");
   background-position: center;
   background-size: cover;
 }
-.ultimate {
-  background-image: url('/images/snowflake.jpg');
+.ulti {
+  background-image: url("/images/soon.jpg");
   background-size: cover;
   background-position: center;
 }
 .box {
-  position:relative;
+  position: relative;
 }
 .box:after {
-  content:'\A';
-  position:absolute;
-  width:100%; height:100%;
-  top:0; left:0;
-  background:rgba(0,0,0,0.6);
-  opacity:0;
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   z-index: 1;
 }
 .box:hover:after {
-  opacity:1;
+  opacity: 1;
 }
-.card-info .card-title{
-  transition: all .2s ease-in-out; 
+.card-info .card-title {
+  transition: all 0.2s ease-in-out;
   font-weight: 500;
 }
 .card-info:hover {
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
   transform: scale(1.3);
 }
 .card {
@@ -257,25 +245,24 @@ a {
   z-index: 2;
 }
 .container {
-  position:relative;
+  position: relative;
   z-index: 0;
 }
 .container:after {
-  content:'\A';
+  content: "\A";
   position: absolute;
-  top:0; 
+  top: 0;
   left: 0;
   right: 0;
-  background:rgba(0,0,0,0.6);
-  opacity:1;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   z-index: 1;
 }
 
-
 /* Page Four */
-.x{
+.x {
   border: 2px solid black;
 }
 .page-two {
@@ -285,6 +272,7 @@ a {
   /* justify-content: center; */
   width: 100%;
   height: 100%;
+  border: 2px solid red;
 }
 .layer-two {
   display: flex;
@@ -292,20 +280,19 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8F9 100%); 
+  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
   width: 100%;
   height: 100%;
   min-height: 600px;
   max-width: 1140px;
 }
 
-
 .page-title {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
   margin-top: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 .project-card {
   width: 300px;
@@ -328,49 +315,51 @@ a {
   height: 300px;
   border-radius: 50%;
   /* border: 2px solid white; */
-  background-image: url('/images/profile.jpg');
+  background-image: url("/images/profile.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .solo {
-  background-image: url('/images/chemex.jpg');
+  background-image: url("/images/chemex.jpg");
   background-position: center;
   background-size: cover;
 }
 .theme {
-  background-image: url('/images/colors.webp');
+  background-image: url("/images/colors.webp");
   background-position: center;
   background-size: cover;
 }
 .scythe {
-  background-image: url('/images/bidder.jpg');
+  background-image: url("/images/bidder.jpg");
   background-position: center;
   background-size: cover;
 }
 .project-card {
-  position:relative;
+  position: relative;
 }
 .project-card:after {
-  content:'\A';
-  position:absolute;
-  width:100%; height:100%;
-  top:0; left:0;
-  background:rgba(0,0,0,0.6);
-  opacity:0;
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   z-index: 1;
 }
 .project-card:hover:after {
-  opacity:1;
+  opacity: 1;
 }
 .solo-text {
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
   font-weight: 500;
 }
 .solo-text:hover {
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
   transform: scale(1.3);
 }
 .solo-text {
@@ -381,12 +370,10 @@ a {
   z-index: 2;
 }
 .group {
-  background-image: url('/images/sparkle.png');
+  background-image: url("/images/sparkle.png");
   background-position: center;
   background-size: cover;
-
 }
-
 
 /* Page Five */
 .page-five {
@@ -394,19 +381,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;  
+  text-align: center;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 .fat-div {
   width: 100%;
-  height: 100%;
   margin-top: 48px;
   margin-bottom: 24px;
 }
 .icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 48px;
   margin-top: 24px;
 }
@@ -418,5 +404,9 @@ a {
   width: 100%;
   height: 100%;
   max-width: 1140px;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8F9 100%);
+  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
+}
+.link {
+  margin-left: 12px;
+  margin-right: 12px;
 }
