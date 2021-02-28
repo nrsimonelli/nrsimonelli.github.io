@@ -104,7 +104,6 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 2px solid black;
 }
 
 @media screen and (max-width: 700px) {
@@ -117,7 +116,6 @@ a {
   #layer-two {
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
   }
 }
 @media screen and (max-width: 840px) {
@@ -272,7 +270,6 @@ a {
   /* justify-content: center; */
   width: 100%;
   height: 100%;
-  border: 2px solid red;
 }
 .layer-two {
   display: flex;
@@ -368,6 +365,31 @@ a {
 .project-card:hover .solo-text {
   visibility: visible;
   z-index: 2;
+}
+
+@media (hover: none) and (any-hover: none) {
+  .project-card:hover .solo-text {
+    visibility: visible;
+    z-index: 2;
+  }
+  .solo-text:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.3);
+  }
+  .project-card:hover:after {
+    opacity: 1;
+  }
+  .box:hover:after {
+    opacity: 1;
+  }
+  .card-info:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.3);
+  }
+  .box:hover .card {
+    visibility: visible;
+    z-index: 2;
+  }
 }
 .group {
   background-image: url("/images/sparkle.png");

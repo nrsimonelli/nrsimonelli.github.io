@@ -3,14 +3,42 @@ import "./App.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
 
 class App extends Component {
+  handleWidth = () => {
+    this.setState({
+      windowWidth: window.innerWidth,
+    });
+  };
+
+  componentDidMount = () => {
+    window.addEventListener("resize", this.handleWidth);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("resize", this.handleWidth);
+  };
+
+  state = {
+    windowWidth: window.innerWidth,
+  };
+
   render() {
+    const navName =
+      this.state.windowWidth > 500 ? (
+        <div>NICK SIMONELLI</div>
+      ) : this.state.windowWidth > 400 ? (
+        <div>SIMONELLI</div>
+      ) : (
+        <FlashOnIcon />
+      );
+
     return (
       <div className="root">
         <div className="top">
           <div className="top-sub">
-            <div>NICHOLAS SIMONELLI</div>
+            {navName}
             <div>
               <a
                 href="https://www.linkedin.com/in/nicholas-simonelli-6456a590/"
