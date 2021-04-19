@@ -54,7 +54,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
+  background-image: linear-gradient(
+    to right,
+    #0d91f1 0%,
+    #07c8f9 100%
+  );
   width: 100%;
   height: 100%;
   max-width: 1140px;
@@ -165,46 +169,46 @@ a {
   flex-grow: 1;
 }
 .music {
-  background-image: url("/images/music/discovery.jpg");
+  background-image: url('/images/music/discovery.jpg');
   background-position: center;
   background-size: cover;
 }
 .music-2 {
-  background-image: url("/images/music/unknownpleasures.jpg");
+  background-image: url('/images/music/unknownpleasures.jpg');
   background-position: center;
   background-size: cover;
 }
 .book {
-  background-image: url("/images/books/wildsheep.jpg");
+  background-image: url('/images/books/wildsheep.jpg');
   background-position: center;
   background-size: cover;
 }
 .book-2 {
-  background-image: url("/images/books/dune.png");
+  background-image: url('/images/books/dune.png');
   background-position: center;
   background-size: cover;
 }
 .thriller {
-  background-image: url("/images/thrillers/enemy.jpg");
+  background-image: url('/images/thrillers/enemy.jpg');
   background-position: center;
   background-size: cover;
 }
 .thriller-2 {
-  background-image: url("/images/thrillers/witch.jpg");
+  background-image: url('/images/thrillers/witch.jpg');
   background-position: center;
   background-size: cover;
 }
 .game {
-  background-image: url("/images/games/rusviet.jpg");
+  background-image: url('/images/games/rusviet.jpg');
   background-size: cover;
 }
 .game-2 {
-  background-image: url("/images/games/ds.jpg");
+  background-image: url('/images/games/ds.jpg');
   background-position: center;
   background-size: cover;
 }
 .ulti {
-  background-image: url("/images/soon.jpg");
+  background-image: url('/images/soon.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -212,7 +216,7 @@ a {
   position: relative;
 }
 .box:after {
-  content: "\A";
+  content: '\A';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -247,7 +251,7 @@ a {
   z-index: 0;
 }
 .container:after {
-  content: "\A";
+  content: '\A';
   position: absolute;
   top: 0;
   left: 0;
@@ -277,7 +281,11 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
+  background-image: linear-gradient(
+    to right,
+    #0d91f1 0%,
+    #07c8f9 100%
+  );
   width: 100%;
   height: 100%;
   min-height: 600px;
@@ -312,23 +320,23 @@ a {
   height: 300px;
   border-radius: 50%;
   /* border: 2px solid white; */
-  background-image: url("/images/profile.jpg");
+  background-image: url('/images/profile.jpg');
   background-position: center;
   background-size: cover;
 }
 
 .solo {
-  background-image: url("/images/chemex.jpg");
+  background-image: url('/images/chemex.jpg');
   background-position: center;
   background-size: cover;
 }
 .theme {
-  background-image: url("/images/colors.webp");
+  background-image: url('/images/colors.webp');
   background-position: center;
   background-size: cover;
 }
 .scythe {
-  background-image: url("/images/bidder.jpg");
+  background-image: url('/images/superHeroMulti.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -336,7 +344,7 @@ a {
   position: relative;
 }
 .project-card:after {
-  content: "\A";
+  content: '\A';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -392,7 +400,7 @@ a {
   }
 }
 .group {
-  background-image: url("/images/sparkle.png");
+  background-image: url('/images/sparkle.png');
   background-position: center;
   background-size: cover;
 }
@@ -426,7 +434,11 @@ a {
   width: 100%;
   height: 100%;
   max-width: 1140px;
-  background-image: linear-gradient(to right, #0d91f1 0%, #07c8f9 100%);
+  background-image: linear-gradient(
+    to right,
+    #0d91f1 0%,
+    #07c8f9 100%
+  );
 }
 .link {
   margin-left: 12px;
