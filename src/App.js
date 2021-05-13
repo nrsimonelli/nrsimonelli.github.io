@@ -64,9 +64,9 @@ class App extends Component {
         </div>
         <div className='page-one'>
           <div className='layer'>
-            <div className='wide-l'>Full Stack Developer</div>
+            <div className='wide-l'>Full Stack</div>
             <div className='profile-pic'></div>
-            <div className='wide-r'></div>
+            <div className='wide-r'>Developer</div>
           </div>
         </div>
 
