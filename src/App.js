@@ -8,11 +8,14 @@ import './global.css';
 const App = () => {
   return (
     <div className='root'>
-      <div className='display flex place-center'>
-        <div className='container mx-auto sm md lg xl bg-primary text-primary-lighter'>
-          <div>test</div>
-          <div>HELLO</div>
-          <div>test</div>
+      <div className='display flex justify-start items-center'>
+        <div className='container px min-h-screen mx-auto sm md lg xl bg-primary text-primary-lighter'>
+          <div>Hello, my name is</div>
+          <div className='text-8xl'>Nicholas</div>
+          <div className='text-8xl'>Simonelli</div>
+          <div className='subtitle-text'>
+            clean code and elegant design
+          </div>
         </div>
       </div>
     </div>
