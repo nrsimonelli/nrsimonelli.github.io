@@ -1,0 +1,99 @@
+@use './variables' as *;
+
+// dimensions
+@mixin mx($value: $margin-base) {
+  margin-right: $value;
+  margin-left: $value;
+}
+@mixin my($value: $margin-base) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+@mixin px($value: $padding-base) {
+  padding-right: $value;
+  padding-left: $value;
+}
+@mixin py($value: $padding-base) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}
+
+@mixin text-size($value: 'base') {
+  @if $value == 'base' {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  @if $value == 'xs' {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  @if $value == 'sm' {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  @if $value == 'lg' {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @if $value == 'xl' {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  @if $value == '2xl' {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @if $value == '3xl' {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  @if $value == '4xl' {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  @if $value == '5xl' {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  @if $value == '6xl' {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+  @if $value == '7xl' {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  @if $value == '8xl' {
+    font-size: 7.5rem;
+    line-height: 1;
+  }
+}
+
+// break points
+@mixin break-sm {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}
+@mixin break-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin break-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin break-xl {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
