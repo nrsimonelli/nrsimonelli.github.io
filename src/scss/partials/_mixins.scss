@@ -76,6 +76,15 @@
   }
 }
 
+// gradients
+@mixin gradient($direction, $firstColor, $secondColor) {
+  background-image: linear-gradient(
+    to $direction,
+    $firstColor,
+    $secondColor
+  );
+}
+
 // break points
 @mixin break-sm {
   @media screen and (min-width: 640px) {

@@ -27,12 +27,11 @@ const App = () => {
     animationRef.current = anime({
       targets: '.morph > path',
       easing: 'linear',
-      duration: 4500,
+      duration: 3000,
       loop: false,
       d: [
         { value: [data1, data3] },
         { value: data5 },
-        { value: data13 },
         { value: data10 },
       ],
     });
@@ -45,7 +44,6 @@ const App = () => {
     <svg className='morph' viewBox='0 0 900 600' width='100'>
       <path
         d='M0 131L25 123.7C50 116.3 100 101.7 150 104.5C200 107.3 250 127.7 300 130.5C350 133.3 400 118.7 450 111.7C500 104.7 550 105.3 600 113.3C650 121.3 700 136.7 750 140.7C800 144.7 850 137.3 875 133.7L900 130L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
-        fill='#c1c1c1'
         stroke-linecap='round'
         stroke-linejoin='miter'
       ></path>
@@ -81,23 +79,21 @@ const App = () => {
     <div className='root'>
       <div className='min-h-screen flex justify-start items-center'>
         <div className='nav-container z-1'>
-          <div className='nav-content flex-row justify-between items-center'>
+          <div className='nav-content container flex-row justify-between items-center'>
             <div>Title</div>
             <div>links</div>
             <div>icons</div>
           </div>
         </div>
 
-        <div
-          id='title'
-          className='hero-container flex justify-around'
-        >
+        <div id='title' className='hero-container flex justify-end'>
           {waveEleven}
-          <div className='hero-content container z-1'>
-            <span data-aos='zoom-in-left' data-aos-delay='300'>
-              Hello,{' '}
+          <div className='hero-content hero container z-1 flex justify-center'>
+            <span data-aos='fade-up' data-aos-delay='1000'>
+              Hello,
             </span>
-            <span data-aos='zoom-in' data-aos-delay='900'>
+            <span data-aos='fade-up' data-aos-delay='1300'>
+              {' '}
               my name is
             </span>
             <h1>
@@ -120,30 +116,16 @@ const App = () => {
                 </span>
               ))}
             </h1>
-
-            <span
-              data-aos='fade-up'
-              data-aos-delay='2000'
-              data-aos-duration='3000'
-            >
-              clean code{' '}
-            </span>
-            <span
-              data-aos='fade-up'
-              data-aos-delay='1000'
-              data-aos-duration='3000'
-            >
-              elegant design
-            </span>
           </div>
-          <div className='hero-content'>
+          <div className='hero-content action flex justify-center'>
             <div
-              className='action'
               data-aos='zoom-out'
               data-aos-delay='3000'
               data-aos-anchor-placement='#title'
             >
-              <a href='#skills'>More</a>
+              <a className='button' href='#skills'>
+                More
+              </a>
             </div>
           </div>
         </div>

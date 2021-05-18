@@ -14,8 +14,70 @@ html {
 .about-container {
   @include mx(auto);
   width: 100%;
+}
+.button {
+  @include py(0.5rem);
+  @include px(1.5rem);
+  border-radius: 9999px;
+  background-color: $secondary;
+  border-color: $secondary;
+  color: white;
+  font-weight: 400;
+  @include text-size(lg);
+}
+.button:hover {
+  background-color: $secondary-dark;
+}
+
+.about-title {
+  @include py($padding-base);
+  @include text-size('3xl');
+  @include break-sm {
+    @include text-size('5xl');
+  }
+  @include break-md {
+    @include text-size('6xl');
+  }
+}
+.about-icon-container {
+  width: 100%;
+  max-width: 768px;
+  flex-wrap: wrap;
+}
+.about-icon {
+  @include mx($margin-base);
+  @include my($margin-base);
+  width: 35%;
+  border: 1px solid red;
+  text-align: center;
+  @include break-sm() {
+    width: 25%;
+  }
+}
+.about-icon-image-container {
+  border-radius: 9999px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.75rem;
+  @include gradient(bottom right, $primary-light, $primary-dark);
+  @include mx(auto);
+}
+.about-icon-image {
+  height: 2rem;
+  width: auto;
+  color: $primary-light;
+}
+.about-icon-title {
+  @include py($padding-base);
   div {
-    @include px($padding-base);
+  }
+}
+.about-icon-text {
+  display: none;
+  @include break-sm {
+    display: inherit;
+  }
+  div {
   }
 }
 .el {
@@ -48,59 +110,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: $padding-base;
-  @include mx($margin-base);
-  background-color: $primary-lighter;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.5s;
-  will-change: transform;
-}
-
-.card-title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.card-body {
-  @include my($margin-base);
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-.image-container {
-  margin-top: auto;
-  padding-top: 27px;
-  padding-bottom: 18px;
-
-  img {
-    width: 100%;
-  }
-}
-
-.image-inner-container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 250px;
-}
-
-.ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-}
-
-.ratio-inner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  fill: $secondary;
 }
 
 .box {
@@ -168,8 +178,10 @@ body {
   height: 60px;
 }
 .nav-content {
-  @include mx($margin-base);
+  @include mx(auto);
+  @include px($padding-base);
   height: 100%;
+  max-width: 100%;
 }
 
 .hero-container {
@@ -180,6 +192,7 @@ body {
     @include text-size('5xl');
     font-weight: 700;
     @include py($padding-base);
+    @include my($margin-base);
   }
   height: calc(100vh - 60px);
 
@@ -198,9 +211,6 @@ body {
       @include text-size('8xl');
     }
   }
-  @include break-xl {
-    text-align: center;
-  }
 }
 .hero-content {
   @include my($margin-base);
@@ -209,6 +219,7 @@ body {
 }
 .action {
   text-align: center;
+  height: 30%;
 }
 
 /* Flex */
@@ -375,10 +386,5 @@ body {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
   }
 }
