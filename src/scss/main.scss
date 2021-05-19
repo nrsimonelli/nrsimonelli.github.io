@@ -23,10 +23,21 @@ html {
   border-color: $secondary;
   color: white;
   font-weight: 400;
-  @include text-size(lg);
+  @include text-size('lg');
+  background-image: linear-gradient(
+    to bottom right,
+    $secondary-lighter,
+    $secondary-darker
+  );
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
 }
 .button:hover {
-  background-color: $secondary-dark;
+  background-image: linear-gradient(
+    to bottom right,
+    $secondary-light,
+    $secondary-dark
+  );
 }
 
 .about-title {
@@ -48,7 +59,6 @@ html {
   @include mx($margin-base);
   @include my($margin-base);
   width: 35%;
-  border: 1px solid red;
   text-align: center;
   @include break-sm() {
     width: 25%;
@@ -59,7 +69,7 @@ html {
   width: 3rem;
   height: 3rem;
   padding: 0.75rem;
-  @include gradient(bottom right, $primary-light, $primary-dark);
+  @include gradient(bottom right, $accent-light, $accent-dark);
   @include mx(auto);
 }
 .about-icon-image {
@@ -131,19 +141,16 @@ html {
 }
 .svg-box {
   width: 100px;
-
-  :hover {
-    .svg-path {
-      fill: $accent;
-    }
-    .svg-path-2 {
-      fill: $primary-dark;
-    }
-  }
 }
 
 .svg-path {
-  fill: $primary-darker;
+}
+
+.test-div {
+  height: 50px;
+  width: 50px;
+  background-color: #ce3;
+  pointer-events: none;
 }
 
 body {
@@ -183,13 +190,27 @@ body {
   height: 100%;
   max-width: 100%;
 }
+.nav-icon {
+  color: $primary-lighter;
+  cursor: pointer;
+  :hover {
+    color: $primary-light;
+  }
+}
+.home-icon {
+  height: 1rem;
+  width: 1rem;
+}
+.nav-text {
+  @include mx($margin-base);
+}
 
 .hero-container {
   width: 100%;
 
   @include text-size('lg');
   h1 {
-    @include text-size('5xl');
+    @include text-size('6xl');
     font-weight: 700;
     @include py($padding-base);
     @include my($margin-base);
@@ -208,7 +229,7 @@ body {
   }
   @include break-lg {
     h1 {
-      @include text-size('8xl');
+      @include text-size('7xl');
     }
   }
 }
@@ -216,10 +237,67 @@ body {
   @include my($margin-base);
   @include mx(auto);
   @include px($padding-base);
+  justify-content: flex-start;
+  @include break-sm {
+    justify-content: center;
+  }
+  @include break-md {
+    justify-content: flex-end;
+  }
 }
+.project-root {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $primary;
+}
+.project-container {
+  @include mx(auto);
+  @include py($padding-base);
+  text-align: center;
+}
+.project-title {
+  @include text-size('3xl');
+  @include my($margin-base);
+}
+.project-card-container {
+  background-color: $primary-lighter;
+  @include mx($margin-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 520px;
+  @include my($margin-lg);
+}
+.project-card-image {
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project-card-detail {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project-card-detail-title {
+  @include text-size('2xl');
+}
+.project-card-detail-subtitle {
+  @include text-size('lg');
+}
+.project-card-button {
+}
+
 .action {
   text-align: center;
   height: 30%;
+}
+
+.project-container {
 }
 
 /* Flex */

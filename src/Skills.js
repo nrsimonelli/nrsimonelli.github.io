@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import anime from 'animejs';
 
 const svAws = (
   <svg viewBox='0 0 128 128'>
@@ -98,10 +99,40 @@ const svFlutter = (
   </svg>
 );
 const Skills = () => {
+  const [skills, setSkills] = useState(false);
+
+  function clickDance() {
+    console.log('hello');
+
+    if (!skills) {
+      setSkills(true);
+      anime({
+        targets: '.svg-path',
+        fill: ['#f45', '#c3e', '#ec3', '#0ff', '#f45'],
+      });
+    }
+    if (skills) {
+      setSkills(false);
+      anime({
+        targets: '.svg-path',
+        fill: ['#121212'],
+      });
+    }
+  }
+
   return (
-    <div className='skills min-h-screen flex justify-start items-center wave-3'>
-      <div id='skills'>Skills</div>
+    <div
+      id='skills'
+      className='skills flex justify-start items-center wave-3'
+    >
+      <button
+        className='skills-button button'
+        onClick={() => clickDance()}
+      >
+        Skills
+      </button>
       <div className='container svg-wrap flex-row justify-center items-center'>
+        <div className='test-div'></div>
         <div className='svg-box'>{svReact}</div>
         <div className='svg-box'>{svNode}</div>
 
