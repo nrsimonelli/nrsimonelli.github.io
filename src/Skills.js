@@ -125,12 +125,12 @@ const Skills = () => {
       id='skills'
       className='skills flex justify-start items-center wave-3'
     >
-      <button
+      <div
         className='skills-button button'
         onClick={() => clickDance()}
       >
         Skills
-      </button>
+      </div>
       <div className='container svg-wrap flex-row justify-center items-center'>
         <div className='test-div'></div>
         <div className='svg-box'>{svReact}</div>
