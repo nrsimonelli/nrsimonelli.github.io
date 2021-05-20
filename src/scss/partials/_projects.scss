@@ -32,6 +32,21 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
+.project-card-container {
+  .project-1 {
+    background-color: $accent;
+  }
+  .project-2 {
+    background-color: $secondary;
+  }
+  .project-3 {
+    background-color: $primary-dark;
+  }
+  .project-4 {
+    background-color: $red;
+  }
+}
+
 .break-rev {
   @include break-md {
     height: 336px;
@@ -115,4 +130,36 @@
 }
 .project-card-button {
   @include mx($margin-xl);
+}
+
+.project-1 {
+  background: url('/images/wwoman.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.project-2 {
+  background: url('/images/black-coffee.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.project-3 {
+  background: url('/images/simplediamond.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.project-4 {
+  background: url('/images/orb.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wave-stack {
+}
+
+.project-test {
+  background-color: blue;
 }

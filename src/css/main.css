@@ -228,6 +228,19 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+.project-card-container .project-1 {
+  background-color: #fbbf24;
+}
+.project-card-container .project-2 {
+  background-color: #8b5cf6;
+}
+.project-card-container .project-3 {
+  background-color: #3b82f6;
+}
+.project-card-container .project-4 {
+  background-color: #ef4444;
+}
+
 @media screen and (min-width: 768px) {
   .break-rev {
     height: 336px;
@@ -327,6 +340,38 @@ a {
 .project-card-button {
   margin-right: 4rem;
   margin-left: 4rem;
+}
+
+.project-1 {
+  background: url("/images/wwoman.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-2 {
+  background: url("/images/black-coffee.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-3 {
+  background: url("/images/simplediamond.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-4 {
+  background: url("/images/orb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-test {
+  background-color: blue;
 }
 
 .root {
