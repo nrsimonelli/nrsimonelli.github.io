@@ -429,9 +429,32 @@ html {
   width: 3rem;
   height: 3rem;
   padding: 0.75rem;
-  background-image: linear-gradient(to bottom right, #fcd34d, #f59e0b);
   margin-right: auto;
   margin-left: auto;
+}
+
+.icon-orange {
+  background-image: linear-gradient(to bottom right, #fde68a, #ef4444);
+}
+
+.icon-rose {
+  background-image: linear-gradient(to bottom right, #fca5a5, #ec4899);
+}
+
+.icon-indigo {
+  background-image: linear-gradient(to bottom right, #bfdbfe, #4f46e5);
+}
+
+.icon-sea {
+  background-image: linear-gradient(to bottom right, #6ee7b7, #3b82f6);
+}
+
+.icon-green {
+  background-image: linear-gradient(to bottom right, #6ee7b7, #10b981);
+}
+
+.icon-blue {
+  background-image: linear-gradient(to bottom right, #f9a8d4, #3b82f6);
 }
 
 .about-icon-image {

@@ -85,9 +85,27 @@ html {
   width: 3rem;
   height: 3rem;
   padding: 0.75rem;
-  @include gradient(bottom right, $accent-light, $accent-dark);
   @include mx(auto);
 }
+.icon-orange {
+  @include gradient(bottom right, $accent-lighter, $red);
+}
+.icon-rose {
+  @include gradient(bottom right, $red-lighter, $pink-dark);
+}
+.icon-indigo {
+  @include gradient(bottom right, $primary, $purple-dark);
+}
+.icon-sea {
+  @include gradient(bottom right, $green-lighter, $primary-dark);
+}
+.icon-green {
+  @include gradient(bottom right, $green-lighter, $green);
+}
+.icon-blue {
+  @include gradient(bottom right, $pink-light, $primary-dark);
+}
+
 .about-icon-image {
   height: 2rem;
   width: auto;
