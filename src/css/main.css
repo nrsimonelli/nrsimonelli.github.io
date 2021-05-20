@@ -184,7 +184,6 @@ a {
 .project-root {
   min-height: 100vh;
   width: 100%;
-  background-color: #64748b;
 }
 
 .project-container {
@@ -198,12 +197,24 @@ a {
 .project-title {
   font-size: 1.875rem;
   line-height: 2.25rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 640px) {
+  .project-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-title {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 .project-card-container {
-  background-color: #f1f5f9;
+  background-color: #eff6ff;
   margin-right: 1rem;
   margin-left: 1rem;
   display: flex;
@@ -213,6 +224,8 @@ a {
   height: 520px;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,12 +306,22 @@ a {
   margin-right: 4rem;
   margin-left: 4rem;
 }
+@media screen and (min-width: 768px) {
+  .project-card-detail-title {
+    text-align: left;
+  }
+}
 
 .project-card-detail-subtitle {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-right: 4rem;
   margin-left: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .project-card-detail-subtitle {
+    text-align: left;
+  }
 }
 
 .project-card-button {
@@ -307,7 +330,7 @@ a {
 }
 
 .root {
-  background-color: #cbd5e1;
+  background-color: #dbeafe;
   min-height: 100vh;
 }
 
@@ -332,18 +355,30 @@ html {
   padding-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 9999px;
-  background-color: #8b5cf6;
-  border-color: #8b5cf6;
+  background-color: #10b981;
+  border-color: #10b981;
   color: white;
-  background-image: linear-gradient(to bottom right, #34d399, #059669);
+  background-image: linear-gradient(to bottom right, #34d399, #047857);
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
   background-image: linear-gradient(to bottom right, #6ee7b7, #059669);
+  transform: scale(1.1, 1.1);
+}
+
+.button::after {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover::after {
+  opacity: 1;
 }
 
 .about-title {
@@ -351,6 +386,8 @@ html {
   padding-bottom: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 640px) {
   .about-title {
@@ -376,6 +413,8 @@ html {
   margin-left: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 35%;
   text-align: center;
 }
@@ -390,7 +429,7 @@ html {
   width: 3rem;
   height: 3rem;
   padding: 0.75rem;
-  background-image: linear-gradient(to bottom right, #34d399, #059669);
+  background-image: linear-gradient(to bottom right, #fcd34d, #f59e0b);
   margin-right: auto;
   margin-left: auto;
 }
@@ -398,7 +437,7 @@ html {
 .about-icon-image {
   height: 2rem;
   width: auto;
-  color: #cbd5e1;
+  color: #dbeafe;
 }
 
 .about-icon-title {
@@ -412,11 +451,6 @@ html {
   .about-icon-text {
     display: inherit;
   }
-}
-.el {
-  height: 16px;
-  width: 16px;
-  background-color: green;
 }
 
 .b {
@@ -447,7 +481,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  fill: #8b5cf6;
+  fill: #1d4ed8;
 }
 
 .box {
@@ -510,6 +544,28 @@ body {
   background-size: auto 100%;
 }
 
+.wave-alt {
+  background-image: url("/images/waveAlt.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  fill: #dbeafe;
+}
+
+.wave-hide {
+  background-image: url("/images/waveHide.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.wave-show {
+  background-image: url("/images/waveShow.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
 .nav-container {
   width: 100%;
   height: 60px;
@@ -525,11 +581,11 @@ body {
 }
 
 .nav-icon {
-  color: #f1f5f9;
+  color: #dbeafe;
   cursor: pointer;
 }
 .nav-icon :hover {
-  color: #cbd5e1;
+  color: #eff6ff;
 }
 
 .home-icon {
@@ -594,6 +650,22 @@ body {
   .hero-content {
     justify-content: flex-end;
   }
+}
+
+.home {
+  color: #34d399;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.home :hover {
+  color: #6ee7b7;
+}
+
+.hero .name {
+  color: #10b981;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .action {
@@ -776,7 +848,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #64748b;
+  background-color: #bfdbfe;
 }
 
 .bg-secondary {
@@ -784,7 +856,7 @@ body {
 }
 
 .bg-accent {
-  background-color: #10b981;
+  background-color: #fbbf24;
 }
 
 /* MEDIA CONTAINER*/

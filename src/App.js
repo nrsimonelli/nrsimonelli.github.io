@@ -9,7 +9,7 @@ import Skills from './Skills';
 import Connect from './Connect';
 import Projects from './Projects';
 
-import { IoWater } from 'react-icons/io5';
+import { TiFlash } from 'react-icons/ti';
 
 // import GitHubIcon from '@material-ui/icons/GitHub';
 // import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -38,10 +38,10 @@ const App = () => {
         { value: data10 },
       ],
     });
+    animationRef.current = anime({
+      targets: '.blue-target',
+    });
   }, []);
-
-  const firstName = ['N', 'i', 'c', 'h', 'o', 'l', 'a', 's', ' '];
-  const lastName = ['S', 'i', 'm', 'o', 'n', 'e', 'l', 'l', 'i'];
 
   const waveEleven = (
     <svg className='morph' viewBox='0 0 900 600' width='100'>
@@ -68,12 +68,12 @@ const App = () => {
         <div className='nav-container z-1'>
           <div className='nav-content container flex-row justify-between items-center'>
             <div
-              className='nav-icon'
+              className='nav-icon home'
               data-aos='zoom-out'
               data-aos-delay='3000'
             >
               <a href='/'>
-                <IoWater className='home-icon' />
+                <TiFlash />
               </a>
             </div>
             <div className='nav-icon flex-row'>
@@ -108,33 +108,32 @@ const App = () => {
         >
           {waveEleven}
           <div className='hero-content hero container z-1 flex flex-1'>
-            <h1>
-              {firstName.map((i, x) => (
-                <span
-                  key={'first-' + x}
-                  data-aos='fade-in'
-                  data-aos-delay={x * 150 + 1500}
-                >
-                  {i}
-                </span>
-              ))}
-              {lastName.map((i, x) => (
-                <span
-                  key={'last-' + x}
-                  data-aos='fade-in'
-                  data-aos-delay={x * 150 + 1500}
-                >
-                  {i}
-                </span>
-              ))}
+            <h1 className='blue-target'>
+              <span
+                data-aos='fade-in'
+                data-aos-delay={1500}
+                data-aos-duration='3000'
+              >
+                Always Be{' '}
+              </span>
+              <span
+                data-aos='fade-in'
+                data-aos-delay={2100}
+                data-aos-duration='3000'
+              >
+                Coding{' '}
+              </span>
             </h1>
             <div>
               <span data-aos='fade-up' data-aos-delay='1000'>
-                Hello,
+                Hi,
               </span>
               <span data-aos='fade-up' data-aos-delay='1300'>
                 {' '}
-                my name is
+                meet{' '}
+                <a href='#about' className='name'>
+                  Nick Simonelli
+                </a>
               </span>
             </div>
           </div>

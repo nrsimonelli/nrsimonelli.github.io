@@ -4,7 +4,6 @@
 .project-root {
   min-height: 100vh;
   width: 100%;
-  background-color: $primary;
 }
 .project-container {
   @include mx(auto);
@@ -13,7 +12,13 @@
 }
 .project-title {
   @include text-size('3xl');
-  @include my($margin-base);
+  @include my($margin-xl);
+  @include break-sm {
+    @include text-size('5xl');
+  }
+  @include break-md {
+    @include text-size('6xl');
+  }
 }
 .project-card-container {
   background-color: $primary-lighter;
@@ -24,6 +29,8 @@
   border-radius: 10px;
   height: 520px;
   @include my($margin-xl);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 .break-rev {
   @include break-md {
@@ -95,10 +102,16 @@
 .project-card-detail-title {
   @include text-size('3xl');
   @include mx($margin-xl);
+  @include break-md {
+    text-align: left;
+  }
 }
 .project-card-detail-subtitle {
   @include text-size('base');
   @include mx($margin-xl);
+  @include break-md {
+    text-align: left;
+  }
 }
 .project-card-button {
   @include mx($margin-xl);

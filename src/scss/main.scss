@@ -21,26 +21,37 @@ html {
   @include py($padding-base);
   font-weight: 600;
   letter-spacing: 0.1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 9999px;
-  background-color: $secondary;
-  border-color: $secondary;
+  background-color: $green;
+  border-color: $green;
   color: white;
-
   background-image: linear-gradient(
     to bottom right,
-    $accent-light,
-    $accent-dark
+    $green-light,
+    $green-darker
   );
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 .button:hover {
   background-image: linear-gradient(
     to bottom right,
-    $accent-lighter,
-    $accent-dark
+    $green-lighter,
+    $green-dark
   );
+  transform: scale(1.1, 1.1);
+}
+
+.button::after {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover::after {
+  opacity: 1;
 }
 
 .about-title {
@@ -52,6 +63,7 @@ html {
   @include break-md {
     @include text-size('6xl');
   }
+  @include my($margin-lg);
 }
 .about-icon-container {
   width: 100%;
@@ -61,6 +73,7 @@ html {
 .about-icon {
   @include mx($margin-base);
   @include my($margin-base);
+  @include py($padding-base);
   width: 35%;
   text-align: center;
   @include break-sm() {
@@ -90,13 +103,6 @@ html {
   @include break-sm {
     display: inherit;
   }
-  div {
-  }
-}
-.el {
-  height: 16px;
-  width: 16px;
-  background-color: green;
 }
 
 .b {
@@ -108,6 +114,7 @@ html {
   }
   background-color: $secondary;
 }
+
 .z-3 {
   z-index: 3;
 }
@@ -123,7 +130,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  fill: $secondary;
+  fill: $primary-darker;
 }
 
 .box {
@@ -182,6 +189,25 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
+.wave-alt {
+  background-image: url('/images/waveAlt.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  fill: $primary-light;
+}
+.wave-hide {
+  background-image: url('/images/waveHide.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.wave-show {
+  background-image: url('/images/waveShow.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
 
 .nav-container {
   width: 100%;
@@ -194,16 +220,17 @@ body {
   max-width: 100%;
 }
 .nav-icon {
-  color: $primary-lighter;
+  color: $primary-light;
   cursor: pointer;
   :hover {
-    color: $primary-light;
+    color: $primary-lighter;
   }
 }
 .home-icon {
   height: 1rem;
   width: 1rem;
 }
+
 .nav-text {
   @include mx($margin-base);
 }
@@ -246,6 +273,23 @@ body {
   }
   @include break-md {
     justify-content: flex-end;
+  }
+}
+.home {
+  color: $green-light;
+  @include text-size('xl');
+  :hover {
+    color: $green-lighter;
+  }
+}
+
+.hero {
+  h1 {
+  }
+  .name {
+    color: $green;
+    font-weight: 800;
+    @include text-size('xl');
   }
 }
 

@@ -8,9 +8,11 @@ const Projects = () => {
         <div className='project-card-container break-rev'>
           <div className='project-card-image wave-2'></div>
           <div className='project-card-detail'>
-            <div className='project-card-detail-title'>Title</div>
+            <div className='project-card-detail-title'>
+              Heroic Data Vision
+            </div>
             <div className='project-card-detail-subtitle'>
-              sub title text
+              Web Application, Redux, Sagas
             </div>
             <a className='project-card-button button' href='/'>
               View
@@ -20,9 +22,11 @@ const Projects = () => {
         <div className='project-card-container break-reg'>
           <div className='project-card-image wave-3'></div>
           <div className='project-card-detail'>
-            <div className='project-card-detail-title'>Title</div>
+            <div className='project-card-detail-title'>
+              Dark Magic
+            </div>
             <div className='project-card-detail-subtitle'>
-              sub title text
+              Web Design, Sass, Colors
             </div>
             <a className='project-card-button button' href='/'>
               View

@@ -1,9 +1,10 @@
 // Colors
-$primary: #64748b;
-$primary-dark: #334155;
-$primary-darker: #0f172a;
-$primary-light: #cbd5e1;
-$primary-lighter: #f1f5f9;
+$primary: #bfdbfe;
+$primary-dark: #3b82f6;
+$primary-darker: #1d4ed8;
+$primary-darkest: #1e40af;
+$primary-light: #dbeafe;
+$primary-lighter: #eff6ff;
 
 $secondary: #8b5cf6;
 $secondary-light: #a78bfa;
@@ -11,11 +12,35 @@ $secondary-lighter: #c4b5fd;
 $secondary-dark: #7c3aed;
 $secondary-darker: #6d28d9;
 
-$accent: #10b981;
-$accent-light: #34d399;
-$accent-lighter: #6ee7b7;
-$accent-dark: #059669;
-$accent-darker: #047857;
+$accent: #fbbf24;
+$accent-light: #fcd34d;
+$accent-lighter: #fde68a;
+$accent-dark: #f59e0b;
+$accent-darker: #d97706;
+
+$green: #10b981;
+$green-light: #34d399;
+$green-lighter: #6ee7b7;
+$green-dark: #059669;
+$green-darker: #047857;
+
+$red: #ef4444;
+$red-light: #f87171;
+$red-lighter: #fca5a5;
+$red-dark: #dc2626;
+$red-darker: #b91c1c;
+
+$purple: #6366f1;
+$purple-light: #a78bfa;
+$purple-lighter: #c4b5fd;
+$purple-dark: #4f46e5;
+$purple-darker: #4338ca;
+
+$pink: #f472b6;
+$pink-light: #f9a8d4;
+$pink-lighter: #fbcfe8;
+$pink-dark: #ec4899;
+$pink-darker: #db2777;
 
 // Margins
 $margin-none: 0px;
