@@ -498,10 +498,6 @@ html {
 }
 
 .about-icon {
-  margin-right: 1rem;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 35%;
@@ -509,7 +505,7 @@ html {
 }
 @media screen and (min-width: 640px) {
   .about-icon {
-    width: 25%;
+    width: 30%;
   }
 }
 
@@ -522,28 +518,28 @@ html {
   margin-left: auto;
 }
 
-.icon-orange {
-  background-image: linear-gradient(to bottom right, #fde68a, #ef4444);
-}
-
-.icon-rose {
-  background-image: linear-gradient(to bottom right, #fca5a5, #ec4899);
+.icon-blue {
+  background-image: linear-gradient(to bottom right, #2563eb, #22d3ee);
 }
 
 .icon-indigo {
-  background-image: linear-gradient(to bottom right, #bfdbfe, #4f46e5);
+  background-image: linear-gradient(to top left, #60a5fa, #4f46e5);
 }
 
-.icon-sea {
-  background-image: linear-gradient(to bottom right, #6ee7b7, #3b82f6);
+.icon-red {
+  background-image: linear-gradient(to bottom right, #ef4444, #f9a8d4);
+}
+
+.icon-rose {
+  background-image: linear-gradient(to bottom right, #f093fb, #f5576c);
+}
+
+.icon-orange {
+  background-image: linear-gradient(to bottom right, #d97706, #fde047);
 }
 
 .icon-green {
-  background-image: linear-gradient(to bottom right, #6ee7b7, #10b981);
-}
-
-.icon-blue {
-  background-image: linear-gradient(to bottom right, #f9a8d4, #3b82f6);
+  background-image: linear-gradient(to bottom right, #10b981, #6ee7b7);
 }
 
 .about-icon-image {
@@ -553,13 +549,31 @@ html {
 }
 
 .about-icon-title {
+  color: rgba(0, 0, 0, 0.85);
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.about-icon-title div {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.05rem;
+}
+@media screen and (min-width: 768px) {
+  .about-icon-title div {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+}
+
 .about-icon-text {
   display: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .about-icon-text {
     display: inherit;
   }

@@ -25,7 +25,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-orange'>
+            <div className='about-icon-image-container flex justify-center items-center icon-blue'>
               <AiFillFire className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
@@ -45,7 +45,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-rose'>
+            <div className='about-icon-image-container flex justify-center items-center icon-indigo'>
               <AiFillBug className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
@@ -65,7 +65,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-indigo'>
+            <div className='about-icon-image-container flex justify-center items-center icon-red'>
               <AiFillHeart className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
@@ -85,7 +85,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-sea'>
+            <div className='about-icon-image-container flex justify-center items-center icon-rose'>
               <AiFillThunderbolt className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
@@ -105,7 +105,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-green'>
+            <div className='about-icon-image-container flex justify-center items-center icon-orange'>
               <AiFillNotification className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
@@ -125,7 +125,7 @@ const About = () => {
             data-aos-duration='900'
             data-aos-anchor-placement='#about'
           >
-            <div className='about-icon-image-container flex justify-center items-center icon-blue'>
+            <div className='about-icon-image-container flex justify-center items-center icon-green'>
               <AiFillBulb className='about-icon-image' />
             </div>
             <div className='about-icon-title'>

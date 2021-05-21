@@ -145,13 +145,11 @@ html {
   flex-wrap: wrap;
 }
 .about-icon {
-  @include mx($margin-base);
-  @include my($margin-base);
   @include py($padding-base);
   width: 35%;
   text-align: center;
   @include break-sm() {
-    width: 25%;
+    width: 30%;
   }
 }
 .about-icon-image-container {
@@ -161,23 +159,29 @@ html {
   padding: 0.75rem;
   @include mx(auto);
 }
-.icon-orange {
-  @include gradient(bottom right, $accent-lighter, $red);
-}
-.icon-rose {
-  @include gradient(bottom right, $red-lighter, $pink-dark);
+.icon-blue {
+  // @include gradient(bottom right, $pink-light, $primary-dark);
+  // @include gradient(bottom right, #4facfe, #00f2fe);
+  @include gradient(bottom right, #2563eb, #22d3ee);
 }
 .icon-indigo {
-  @include gradient(bottom right, $primary, $purple-dark);
+  @include gradient(top left, $blue-light, $purple-dark);
+  // @include gradient(bottom right, #fbc2eb, #a6c1ee);
 }
-.icon-sea {
-  @include gradient(bottom right, $green-lighter, $primary-dark);
+.icon-red {
+  @include gradient(bottom right, $red, $pink-light);
+}
+.icon-rose {
+  // @include gradient(bottom right, $red-lighter, $pink-dark);
+  @include gradient(bottom right, #f093fb, #f5576c);
+}
+.icon-orange {
+  @include gradient(bottom right, #d97706, #fde047);
 }
 .icon-green {
-  @include gradient(bottom right, $green-lighter, $green);
-}
-.icon-blue {
-  @include gradient(bottom right, $pink-light, $primary-dark);
+  @include gradient(bottom right, $green, #6ee7b7);
+  // @include gradient(bottom right, #84fab0, #8fd3f4);
+  // @include gradient(bottom right, #43e97b, #38f9d7);
 }
 
 .about-icon-image {
@@ -186,13 +190,25 @@ html {
   color: $primary-light;
 }
 .about-icon-title {
+  color: rgba(0, 0, 0, 0.85);
   @include py($padding-base);
   div {
+    @include text-size('sm');
+    letter-spacing: 0.05rem;
+  }
+  @include break-md {
+    div {
+      @include text-size('xl');
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+    }
   }
 }
 .about-icon-text {
   display: none;
-  @include break-sm {
+  color: rgba(0, 0, 0, 0.6);
+  @include text-size('base');
+  @include break-md {
     display: inherit;
   }
 }
