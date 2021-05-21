@@ -238,7 +238,7 @@ a {
   background-color: #3b82f6;
 }
 .project-card-container .project-4 {
-  background-color: #ef4444;
+  background-color: #f87171;
 }
 
 @media screen and (min-width: 768px) {
@@ -364,14 +364,10 @@ a {
 }
 
 .project-4 {
-  background: url("/images/orb.png");
+  background: url("/images/white.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.project-test {
-  background-color: blue;
 }
 
 .root {
@@ -424,6 +420,42 @@ html {
 
 .button:hover::after {
   opacity: 1;
+}
+
+.button-1 {
+  background-color: #fbbf24;
+  border-color: #fbbf24;
+  color: white;
+  background-image: linear-gradient(to bottom right, #fcd34d, #d97706);
+}
+
+.button-1:hover {
+  background-image: linear-gradient(to bottom right, #fde68a, #f59e0b);
+  transform: scale(1.1, 1.1);
+}
+
+.button-2 {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+  color: white;
+  background-image: linear-gradient(to bottom right, #a78bfa, #6d28d9);
+}
+
+.button-2:hover {
+  background-image: linear-gradient(to bottom right, #c4b5fd, #7c3aed);
+  transform: scale(1.1, 1.1);
+}
+
+.button-3 {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+  background-image: linear-gradient(to bottom right, #60a5fa, #2563eb);
+}
+
+.button-3:hover {
+  background-image: linear-gradient(to bottom right, #93c5fd, #2563eb);
+  transform: scale(1.1, 1.1);
 }
 
 .about-title {

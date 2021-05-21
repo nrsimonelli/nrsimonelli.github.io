@@ -43,7 +43,7 @@
     background-color: $primary-dark;
   }
   .project-4 {
-    background-color: $red;
+    background-color: $red-light;
   }
 }
 
@@ -151,15 +151,8 @@
   background-size: contain;
 }
 .project-4 {
-  background: url('/images/orb.png');
+  background: url('/images/white.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.wave-stack {
-}
-
-.project-test {
-  background-color: blue;
 }

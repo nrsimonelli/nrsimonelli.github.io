@@ -12,9 +12,12 @@ const Projects = () => {
               Heroic Data Vision
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, Redux, Sagas
+              Web Application, NLP, Sagas
             </div>
-            <a className='project-card-button button' href='/'>
+            <a
+              className='project-card-button button-1 button'
+              href='/'
+            >
               View
             </a>
           </div>
@@ -23,12 +26,15 @@ const Projects = () => {
           <div className='project-card-image project-2'></div>
           <div className='project-card-detail'>
             <div className='project-card-detail-title'>
-              Dark Magic
+              Slow Coffee
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Design, Sass, Colors
+              Web Application, Ignite, Delicious
             </div>
-            <a className='project-card-button button' href='/'>
+            <a
+              className='project-card-button button-2 button'
+              href='/'
+            >
               View
             </a>
           </div>
@@ -37,12 +43,15 @@ const Projects = () => {
           <div className='project-card-image project-3'></div>
           <div className='project-card-detail'>
             <div className='project-card-detail-title'>
-              Dark Magic
+              Scythe Bidder
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Design, Sass, Colors
+              Web Application, Local Storage, Dark Mode
             </div>
-            <a className='project-card-button button' href='/'>
+            <a
+              className='project-card-button button-3 button'
+              href='/'
+            >
               View
             </a>
           </div>
@@ -54,9 +63,12 @@ const Projects = () => {
               Dark Magic
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Design, Sass, Colors
+              Web Design, Sass, Programmatic
             </div>
-            <a className='project-card-button button' href='/'>
+            <a
+              className='project-card-button button-4 button'
+              href='/'
+            >
               View
             </a>
           </div>
