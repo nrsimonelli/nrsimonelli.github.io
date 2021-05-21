@@ -40,6 +40,21 @@ const App = () => {
     });
     animationRef.current = anime({
       targets: '.blue-target',
+      easing: 'linear',
+      duration: 3000,
+      delay: 3000,
+      color: [
+        '#0f172a',
+        '#1e293b',
+        '#334155',
+        '#831843',
+        '#9d174d',
+        '#be185d',
+        '#db2777',
+        '#ec4899',
+        '#f472b6',
+      ],
+      loop: false,
     });
   }, []);
 
@@ -108,30 +123,21 @@ const App = () => {
         >
           {waveEleven}
           <div className='hero-content hero container z-1 flex flex-1'>
-            <h1 className='blue-target'>
-              <span
-                data-aos='fade-in'
-                data-aos-delay={1500}
-                data-aos-duration='3000'
-              >
-                Always Be{' '}
+            <h1>
+              <span data-aos='fade-in' data-aos-delay={1500}>
+                Always{' '}
+                <span data-aos='fade-in' data-aos-delay={1800}>
+                  Be{' '}
+                </span>
               </span>
-              <span
-                data-aos='fade-in'
-                data-aos-delay={2100}
-                data-aos-duration='3000'
-              >
+              <span data-aos='fade-in' data-aos-delay={2400}>
                 Coding{' '}
               </span>
             </h1>
             <div>
-              <span data-aos='fade-up' data-aos-delay='1000'>
-                Hi,
-              </span>
-              <span data-aos='fade-up' data-aos-delay='1300'>
-                {' '}
-                meet{' '}
-                <a href='#about' className='name'>
+              <span data-aos='zoom-in' data-aos-delay='300'>
+                Hi, meet{' '}
+                <a href='#about' className='name blue-target'>
                   Nick Simonelli
                 </a>
               </span>

@@ -23,13 +23,13 @@ html {
   letter-spacing: 0.1rem;
   width: 12rem;
   border-radius: 9999px;
-  background-color: $green;
-  border-color: $green;
+  background-color: $pink;
+  border-color: $pink;
   color: white;
   background-image: linear-gradient(
     to bottom right,
-    $green-light,
-    $green-darker
+    $pink-light,
+    $pink-darker
   );
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
@@ -39,8 +39,8 @@ html {
 .button:hover {
   background-image: linear-gradient(
     to bottom right,
-    $green-lighter,
-    $green-dark
+    $pink-lighter,
+    $pink-dark
   );
   transform: scale(1.1, 1.1);
 }
@@ -97,15 +97,33 @@ html {
   color: white;
   background-image: linear-gradient(
     to bottom right,
-    $blue-light,
+    #38bdf8,
     $blue-dark
   );
 }
 .button-3:hover {
   background-image: linear-gradient(
     to bottom right,
-    $blue-lighter,
+    #7dd3fc,
     $blue-dark
+  );
+  transform: scale(1.1, 1.1);
+}
+.button-4 {
+  background-color: $red-light;
+  border-color: $red-light;
+  color: white;
+  background-image: linear-gradient(
+    to bottom right,
+    $pink-light,
+    $red-dark
+  );
+}
+.button-4:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    $pink-lighter,
+    $red-dark
   );
   transform: scale(1.1, 1.1);
 }
@@ -350,10 +368,10 @@ body {
   }
 }
 .home {
-  color: $green-light;
+  color: $pink;
   @include text-size('xl');
   :hover {
-    color: $green-lighter;
+    color: $pink-light;
   }
 }
 
@@ -361,7 +379,6 @@ body {
   h1 {
   }
   .name {
-    color: $green;
     font-weight: 800;
     @include text-size('xl');
   }
