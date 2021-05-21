@@ -176,7 +176,7 @@ html {
   @include gradient(bottom right, #f093fb, #f5576c);
 }
 .icon-orange {
-  @include gradient(bottom right, #d97706, #fde047);
+  @include gradient(bottom right, #fde047, #d97706);
 }
 .icon-green {
   @include gradient(bottom right, $green, #6ee7b7);

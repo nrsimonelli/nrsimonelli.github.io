@@ -1,0 +1,33 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.skills-root {
+  min-height: 100vh;
+  width: 100%;
+}
+.skills-container {
+  @include mx(auto);
+  @include py($padding-base);
+  width: 100%;
+  text-align: center;
+}
+.skills-title {
+  @include text-size('3xl');
+  @include my($margin-xl);
+  @include break-sm {
+    @include text-size('5xl');
+  }
+  @include break-md {
+    @include text-size('6xl');
+  }
+}
+
+.skills-button {
+  @include mx($margin-xl);
+}
+
+.tech-ex {
+  height: 50px;
+  width: 50px;
+  background: $accent;
+}

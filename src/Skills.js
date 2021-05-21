@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import anime from 'animejs';
 
+import { ImFolder, ImFolderOpen } from 'react-icons/im';
+
 const svAws = (
   <svg viewBox='0 0 128 128'>
     <path
@@ -105,46 +107,37 @@ const Skills = () => {
     console.log('hello');
 
     if (!skills) {
-      setSkills(true);
       anime({
-        targets: '.svg-path',
-        fill: ['#f45', '#c3e', '#ec3', '#0ff', '#f45'],
+        targets: '.tech-ex',
+        background: ['#f45', '#c3e', '#ec3', '#0ff', '#f45'],
       });
     }
     if (skills) {
-      setSkills(false);
       anime({
-        targets: '.svg-path',
-        fill: ['#121212'],
+        targets: '.tech-ex',
+        background: ['#121212'],
       });
     }
+    setSkills(!skills);
   }
 
   return (
     <div
       id='skills'
-      className='skills flex justify-start items-center wave-3'
+      className='skills-root flex justify-start items-center'
     >
-      <div
-        className='skills-button button'
-        onClick={() => clickDance()}
-      >
-        Skills
-      </div>
-      <div className='container svg-wrap flex-row justify-center items-center'>
-        <div className='test-div'></div>
-        <div className='svg-box'>{svReact}</div>
-        <div className='svg-box'>{svNode}</div>
-
-        <div className='svg-box'>{svSass}</div>
-        <div className='svg-box'>{svFlutter}</div>
-        <div className='svg-box'>{svPython}</div>
-        <div className='svg-box'>{svMsql}</div>
-        <div className='svg-box'>{svAws}</div>
-      </div>
-
-      <div>
-        <a href='#works'>More</a>
+      <div className='skills-container container flex justify-center items-center b'>
+        <div className='skills-title'>Tech Stack</div>
+        <div className='skills-stack-container'>
+          <div className='tech-ex'></div>
+          <div className='folder-icon'>
+            {skills ? (
+              <ImFolderOpen onClick={() => clickDance()} />
+            ) : (
+              <ImFolder onClick={() => clickDance()} />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   ); // end return

@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div id='work' className='project-root'>
       <div className='project-container container'>
-        <div className='project-title'>Works</div>
+        <div className='project-title'>Recent Works</div>
         <div className='project-card-container break-rev'>
           <div className='project-card-image project-1 wave-stack'></div>
           <div className='project-card-detail'>
@@ -12,13 +12,15 @@ const Projects = () => {
               Heroic Data Vision
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, NLP, Sagas
+              Web Application, NLP, Redux Sagas
             </div>
             <a
               className='project-card-button button-1 button'
-              href='/'
+              href='https://heroic-winds.herokuapp.com/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              View
+              View Project
             </a>
           </div>
         </div>
@@ -29,13 +31,13 @@ const Projects = () => {
               Slow Coffee
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, Ignite, Delicious
+              Mobile, Ignite, Delicious
             </div>
             <a
               className='project-card-button button-2 button'
-              href='/'
+              href='#work'
             >
-              View
+              Coming Soon
             </a>
           </div>
         </div>
@@ -46,13 +48,15 @@ const Projects = () => {
               Scythe Bidder
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, Local Storage, Dark Mode
+              Web Application, Sockets, Dark Mode
             </div>
             <a
               className='project-card-button button-3 button'
-              href='/'
+              href='https://scythe-bidder.herokuapp.com/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              View
+              View Project
             </a>
           </div>
         </div>
@@ -67,9 +71,11 @@ const Projects = () => {
             </div>
             <a
               className='project-card-button button-4 button'
-              href='/'
+              href='https://dark-magic.herokuapp.com/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              View
+              View Project
             </a>
           </div>
         </div>
