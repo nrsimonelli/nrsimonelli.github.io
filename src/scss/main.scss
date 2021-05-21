@@ -396,6 +396,7 @@ body {
   }
   .name {
     font-weight: 800;
+
     @include text-size('xl');
   }
 }

@@ -214,7 +214,7 @@ a {
 }
 
 .project-card-container {
-  background-color: #eff6ff;
+  background-color: #f8fafc;
   margin-right: 1rem;
   margin-left: 1rem;
   display: flex;
@@ -371,7 +371,7 @@ a {
 }
 
 .root {
-  background-color: #dbeafe;
+  background-color: #f1f5f9;
   min-height: 100vh;
 }
 
@@ -545,7 +545,7 @@ html {
 .about-icon-image {
   height: 2rem;
   width: auto;
-  color: #dbeafe;
+  color: #f1f5f9;
 }
 
 .about-icon-title {
@@ -675,7 +675,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  fill: #dbeafe;
+  fill: #f1f5f9;
 }
 
 .wave-hide {
@@ -707,11 +707,11 @@ body {
 }
 
 .nav-icon {
-  color: #dbeafe;
+  color: #f1f5f9;
   cursor: pointer;
 }
 .nav-icon :hover {
-  color: #eff6ff;
+  color: #f8fafc;
 }
 
 .home-icon {

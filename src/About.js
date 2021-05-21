@@ -15,7 +15,7 @@ const About = () => {
       className='about flex justify-center items-center'
     >
       <div className='container about-container flex flex-1 justify-start items-center'>
-        <div className='about-title'>About</div>
+        <div className='about-title'>Who am I?</div>
 
         <div className='about-icon-container flex-row justify-center items-center'>
           <div
@@ -29,7 +29,7 @@ const About = () => {
               <AiFillFire className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Full Stack</div>
             </div>
             <div className='about-icon-text'>
               <div>
@@ -49,7 +49,7 @@ const About = () => {
               <AiFillBug className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Creative</div>
             </div>
             <div className='about-icon-text'>
               <div>
@@ -69,7 +69,7 @@ const About = () => {
               <AiFillHeart className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Leader</div>
             </div>
             <div className='about-icon-text'>
               <div>
@@ -89,7 +89,7 @@ const About = () => {
               <AiFillThunderbolt className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Skilled</div>
             </div>
             <div className='about-icon-text'>
               <div>
@@ -109,7 +109,7 @@ const About = () => {
               <AiFillNotification className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Agile</div>
             </div>
             <div className='about-icon-text'>
               <div>
@@ -129,7 +129,7 @@ const About = () => {
               <AiFillBulb className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Title</div>
+              <div>Engaging</div>
             </div>
             <div className='about-icon-text'>
               <div>
