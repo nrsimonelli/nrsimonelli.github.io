@@ -2,7 +2,7 @@ import React from 'react';
 import {
   AiFillFire,
   AiFillBug,
-  AiFillHeart,
+  AiOutlineTeam,
   AiFillThunderbolt,
   AiFillBulb,
   AiFillNotification,
@@ -46,7 +46,7 @@ const About = () => {
             data-aos-anchor-placement='#about'
           >
             <div className='about-icon-image-container flex justify-center items-center icon-indigo'>
-              <AiFillBug className='about-icon-image' />
+              <AiFillBulb className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
               <div>Creative</div>
@@ -66,7 +66,7 @@ const About = () => {
             data-aos-anchor-placement='#about'
           >
             <div className='about-icon-image-container flex justify-center items-center icon-red'>
-              <AiFillHeart className='about-icon-image' />
+              <AiFillNotification className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
               <div>Leader</div>
@@ -106,7 +106,7 @@ const About = () => {
             data-aos-anchor-placement='#about'
           >
             <div className='about-icon-image-container flex justify-center items-center icon-orange'>
-              <AiFillNotification className='about-icon-image' />
+              <AiOutlineTeam className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
               <div>Agile</div>
@@ -126,7 +126,7 @@ const About = () => {
             data-aos-anchor-placement='#about'
           >
             <div className='about-icon-image-container flex justify-center items-center icon-green'>
-              <AiFillBulb className='about-icon-image' />
+              <AiFillBug className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
               <div>Engaging</div>
