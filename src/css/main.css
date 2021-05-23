@@ -414,6 +414,67 @@ a {
   background: #fbbf24;
 }
 
+.tech-stack-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 768px;
+}
+.tech-stack-mobile svg {
+  margin: 1rem 1rem;
+}
+
+.connect-root {
+  width: 100%;
+}
+
+.connect-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 640px) {
+  .connect-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .connect-title {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.connect-button {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.connect-footer {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #f1f5f9;
+}
+
+.connect-container-content {
+  background-color: #3b82f6;
+  width: 100%;
+}
+
 .root {
   background-color: #f1f5f9;
   min-height: 100vh;

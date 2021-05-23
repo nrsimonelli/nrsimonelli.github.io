@@ -1,0 +1,35 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.connect-root {
+  width: 100%;
+}
+.connect-container {
+  @include mx(auto);
+  width: 100%;
+  text-align: center;
+}
+.connect-title {
+  @include text-size('3xl');
+  @include my($margin-xl);
+  @include break-sm {
+    @include text-size('5xl');
+  }
+  @include break-md {
+    @include text-size('6xl');
+  }
+}
+
+.connect-button {
+  @include mx($margin-xl);
+}
+.connect-footer {
+  @include text-size('sm');
+  @include my($margin-base);
+  color: $primary-light;
+}
+
+.connect-container-content {
+  background-color: $primary-dark;
+  width: 100%;
+}

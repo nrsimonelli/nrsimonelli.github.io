@@ -31,3 +31,15 @@
   width: 50px;
   background: $accent;
 }
+.tech-stack-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 768px;
+  svg {
+    margin: 1rem 1rem;
+  }
+}

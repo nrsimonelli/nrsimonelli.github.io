@@ -5,9 +5,30 @@ const Connect = () => {
   return (
     <div
       id='connect'
-      className='connect min-h-screen flex justify-start items-center wave-2'
+      className='connect-root min-h-screen flex justify-center items-center wave-1'
     >
-      Connect
+      <div className='connect-container container flex justify-between min-h-screen items-center'>
+        <div className='connect-title'>Let's Connect</div>
+
+        <a
+          className='connect-button button'
+          href='mailto:nrsimonelli@gmail.com?subject=Development Inquiry'
+        >
+          Contact
+        </a>
+
+        <div className='connect-footer'>
+          Developed by{' '}
+          <a
+            href='https://github.com/nrsimonelli'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            nrsimonelli
+          </a>
+          , 2021
+        </div>
+      </div>
     </div>
   ); // end return
 };
