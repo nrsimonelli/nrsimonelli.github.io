@@ -33,8 +33,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Development services spanning from front end design to
+                back end architechture.
               </div>
             </div>
           </div>
@@ -53,8 +53,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Strong critical thinking skills and creative mindset
+                geared for optimal solutions.
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Exceptional initiative, emotional intelligence, and
+                drive to maximize team enviornments.
               </div>
             </div>
           </div>
@@ -93,8 +93,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Leverages a diverse toolset, knowledge base, and
+                gathered expertise for constant value.
               </div>
             </div>
           </div>
@@ -113,8 +113,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Dynamic, responsive, collaborative. Excels in agile
+                frameworks and related team structures.
               </div>
             </div>
           </div>
@@ -133,8 +133,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Select text describing the logo in a way that adds
-                detail and support. Invisible on small screens
+                Highly passionate and motivated. I love what I do and
+                enjoy doing it well.
               </div>
             </div>
           </div>

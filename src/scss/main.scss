@@ -207,6 +207,7 @@ html {
 .about-icon-text {
   display: none;
   color: rgba(0, 0, 0, 0.6);
+  @include px($padding-base);
   @include text-size('base');
   @include break-md {
     display: inherit;

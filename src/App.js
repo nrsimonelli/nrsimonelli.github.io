@@ -11,11 +11,6 @@ import Projects from './Projects';
 
 import { TiFlash } from 'react-icons/ti';
 
-// import GitHubIcon from '@material-ui/icons/GitHub';
-// import LinkedInIcon from '@material-ui/icons/LinkedIn';
-// import EmailIcon from '@material-ui/icons/Email';
-// import FlashOnIcon from '@material-ui/icons/FlashOn';
-
 const App = () => {
   useEffect(() => {
     AOS.init({
