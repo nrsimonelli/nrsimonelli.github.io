@@ -34,7 +34,7 @@ const About = () => {
             <div className='about-icon-text'>
               <div>
                 Development services spanning from front end design to
-                back end architechture.
+                back end architecture.
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const About = () => {
             <div className='about-icon-text'>
               <div>
                 Exceptional initiative, emotional intelligence, and
-                drive to maximize team enviornments.
+                drive to maximize team environments.
               </div>
             </div>
           </div>
