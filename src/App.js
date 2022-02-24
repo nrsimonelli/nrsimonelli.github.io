@@ -57,8 +57,8 @@ const App = () => {
     <svg className='morph' viewBox='0 0 900 600' width='100'>
       <path
         d='M0 131L25 123.7C50 116.3 100 101.7 150 104.5C200 107.3 250 127.7 300 130.5C350 133.3 400 118.7 450 111.7C500 104.7 550 105.3 600 113.3C650 121.3 700 136.7 750 140.7C800 144.7 850 137.3 875 133.7L900 130L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
-        stroke-linecap='round'
-        stroke-linejoin='miter'
+        strokeLinecap='round'
+        strokeLinejoin='miter'
       ></path>
     </svg>
   );
@@ -119,13 +119,10 @@ const App = () => {
           {waveEleven}
           <div className='hero-content hero container z-1 flex flex-1'>
             <h1>
-              <span data-aos='fade-in' data-aos-delay={1500}>
-                Always{' '}
-                <span data-aos='fade-in' data-aos-delay={1800}>
-                  Be{' '}
-                </span>
+              <span data-aos='fade-in' data-aos-delay={1800}>
+                Always Be{' '}
               </span>
-              <span data-aos='fade-in' data-aos-delay={2400}>
+              <span data-aos='fade-in' data-aos-delay={1800}>
                 Coding{' '}
               </span>
             </h1>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+	 <defs>
+    <linearGradient id="myGradient" gradientTransform="rotate(45)">
+      <stop offset="5%"  stop-color="#434343" />
+      <stop offset="95%" stop-color="black" />
+    </linearGradient>
+  </defs>
+<circle cx="60" cy="60.834" r="54.167" fill="url('#myGradient')" />
+</svg>

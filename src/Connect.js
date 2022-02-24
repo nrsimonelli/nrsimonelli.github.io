@@ -26,7 +26,7 @@ const Connect = () => {
           >
             nrsimonelli
           </a>
-          , 2021
+          , 2022
         </div>
       </div>
     </div>

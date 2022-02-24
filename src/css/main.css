@@ -179,6 +179,7 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: default;
 }
 
 .project-root {
@@ -338,6 +339,7 @@ a {
 }
 
 .project-card-button {
+  cursor: pointer;
   margin-right: 4rem;
   margin-left: 4rem;
 }
@@ -483,6 +485,9 @@ a {
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
+  background-color: #1d4ed8;
+  scrollbar-width: none;
 }
 
 .about {
@@ -816,7 +821,7 @@ body {
 
 .nav-icon {
   color: #f1f5f9;
-  cursor: pointer;
+  cursor: default;
 }
 .nav-icon :hover {
   color: #f8fafc;
@@ -828,8 +833,27 @@ body {
 }
 
 .nav-text {
+  display: inline-block;
+  position: relative;
+  color: white;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+.nav-text ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.nav-text :hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .hero-container {
@@ -873,14 +897,9 @@ body {
   margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
 }
-@media screen and (min-width: 640px) {
-  .hero-content {
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hero-content {
     justify-content: flex-end;
   }
