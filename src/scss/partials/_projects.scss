@@ -129,6 +129,7 @@
   }
 }
 .project-card-button {
+  cursor: pointer;
   @include mx($margin-xl);
 }
 

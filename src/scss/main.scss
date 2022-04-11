@@ -8,6 +8,9 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
+  background-color: #1d4ed8;
+  scrollbar-width: none;
 }
 .about {
   min-height: 50vh;
@@ -327,7 +330,7 @@ body {
 }
 .nav-icon {
   color: $primary-light;
-  cursor: pointer;
+  cursor: default;
   :hover {
     color: $primary-lighter;
   }
@@ -338,7 +341,28 @@ body {
 }
 
 .nav-text {
+  display: inline-block;
+  position: relative;
+  color: white;
   @include mx($margin-base);
+
+  ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    top: 110%;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  :hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
 .hero-container {
@@ -373,11 +397,8 @@ body {
   @include my($margin-base);
   @include mx(auto);
   @include px($padding-base);
-  justify-content: flex-start;
-  @include break-sm {
-    justify-content: center;
-  }
-  @include break-md {
+  justify-content: center;
+  @include break-lg {
     justify-content: flex-end;
   }
 }
@@ -392,7 +413,6 @@ body {
 .hero {
   .name {
     font-weight: 800;
-
     @include text-size('xl');
   }
 }
