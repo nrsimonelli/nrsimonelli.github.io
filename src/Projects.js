@@ -12,11 +12,11 @@ const Projects = () => {
               Heroic Data Vision
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, NLP, Redux Sagas
+              Web Application, TypeScript, RTK Query
             </div>
             <a
               className='project-card-button button-1 button'
-              href='https://heroic-winds.herokuapp.com/'
+              href='https://hero-wind.vercel.app/'
               target='_blank'
               rel='noopener noreferrer'
             >
