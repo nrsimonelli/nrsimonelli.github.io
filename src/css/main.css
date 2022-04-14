@@ -239,7 +239,13 @@ a {
   background-color: #3b82f6;
 }
 .project-card-container .project-4 {
-  background-color: #f87171;
+  background-color: #f85872;
+}
+.project-card-container .project-5 {
+  background-color: #10b981;
+}
+.project-card-container .project-6 {
+  background-color: #f472b6;
 }
 
 @media screen and (min-width: 768px) {
@@ -367,6 +373,20 @@ a {
 
 .project-4 {
   background: url("/images/white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-5 {
+  background: url("/images/white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project-6 {
+  background: url("/images/garuBlue.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -570,14 +590,38 @@ html {
 }
 
 .button-4 {
-  background-color: #f87171;
-  border-color: #f87171;
+  background-color: #f85872;
+  border-color: #f85872;
   color: white;
-  background-image: linear-gradient(to bottom right, #f9a8d4, #dc2626);
+  background-image: linear-gradient(to bottom right, #fb7185, #e11d48);
 }
 
 .button-4:hover {
-  background-image: linear-gradient(to bottom right, #fbcfe8, #dc2626);
+  background-image: linear-gradient(to bottom right, #fda4af, #e11d48);
+  transform: scale(1.1, 1.1);
+}
+
+.button-5 {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: white;
+  background-image: linear-gradient(to bottom right, #34d399, #047857);
+}
+
+.button-5:hover {
+  background-image: linear-gradient(to bottom right, #6ee7b7, #047857);
+  transform: scale(1.1, 1.1);
+}
+
+.button-6 {
+  background-color: #f9a8d4;
+  border-color: #f9a8d4;
+  color: white;
+  background-image: linear-gradient(to bottom right, #f9a8d4, #db2777);
+}
+
+.button-6:hover {
+  background-image: linear-gradient(to bottom right, #fbcfe8, #db2777);
   transform: scale(1.1, 1.1);
 }
 
@@ -638,7 +682,7 @@ html {
 }
 
 .icon-red {
-  background-image: linear-gradient(to bottom right, #ef4444, #f9a8d4);
+  background-image: linear-gradient(to bottom right, #f85872, #f9a8d4);
 }
 
 .icon-rose {

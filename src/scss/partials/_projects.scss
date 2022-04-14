@@ -43,7 +43,13 @@
     background-color: $primary-dark;
   }
   .project-4 {
-    background-color: $red-light;
+    background-color: $red;
+  }
+  .project-5 {
+    background-color: $green;
+  }
+  .project-6 {
+    background-color: $pink;
   }
 }
 
@@ -153,6 +159,18 @@
 }
 .project-4 {
   background: url('/images/white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.project-5 {
+  background: url('/images/white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.project-6 {
+  background: url('/images/garuBlue.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

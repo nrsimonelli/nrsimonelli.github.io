@@ -5,14 +5,15 @@ const Projects = () => {
     <div id='work' className='project-root'>
       <div className='project-container container'>
         <div className='project-title'>Recent Works</div>
-        <div className='project-card-container break-rev'>
+        {/* Hero Wind */}
+        <div className='project-card-container break-reg'>
           <div className='project-card-image project-1 wave-stack'></div>
           <div className='project-card-detail'>
             <div className='project-card-detail-title'>
-              Heroic Data Vision
+              Heroic Stats
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, TypeScript, RTK Query
+              Data Visualization, TypeScript, RTK Query
             </div>
             <a
               className='project-card-button button-1 button'
@@ -24,6 +25,27 @@ const Projects = () => {
             </a>
           </div>
         </div>
+        {/* Untitled */}
+        <div className='project-card-container break-rev'>
+          <div className='project-card-image project-5'></div>
+          <div className='project-card-detail'>
+            <div className='project-card-detail-title'>
+              Untitled Theme
+            </div>
+            <div className='project-card-detail-subtitle'>
+              Utility based classes, Radix, Stitches
+            </div>
+            <a
+              className='project-card-button button-5 button'
+              href='https://untitled-theme.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+        {/* Coffee */}
         <div className='project-card-container break-reg'>
           <div className='project-card-image project-2'></div>
           <div className='project-card-detail'>
@@ -41,6 +63,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
+        {/* Scythe */}
         <div className='project-card-container break-rev'>
           <div className='project-card-image project-3'></div>
           <div className='project-card-detail'>
@@ -48,7 +71,7 @@ const Projects = () => {
               Scythe Bidder
             </div>
             <div className='project-card-detail-subtitle'>
-              Web Application, Sockets, Dark Mode
+              Web App, Sockets, Dark Mode
             </div>
             <a
               className='project-card-button button-3 button'
@@ -60,7 +83,25 @@ const Projects = () => {
             </a>
           </div>
         </div>
+        {/* Gary Oak */}
         <div className='project-card-container break-reg'>
+          <div className='project-card-image project-6'></div>
+          <div className='project-card-detail'>
+            <div className='project-card-detail-title'>Rival Dex</div>
+            <div className='project-card-detail-subtitle'>
+              Advanced Redux, TypeScript, Nostalgia
+            </div>
+            <a
+              className='project-card-button button-6 button'
+              href='#work'
+            >
+              Coming Soon
+            </a>
+          </div>
+        </div>
+
+        {/* Sass Colors */}
+        {/* <div className='project-card-container break-reg'>
           <div className='project-card-image project-4'></div>
           <div className='project-card-detail'>
             <div className='project-card-detail-title'>
@@ -78,7 +119,7 @@ const Projects = () => {
               View Project
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

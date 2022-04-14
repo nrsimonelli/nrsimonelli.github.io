@@ -113,20 +113,56 @@ html {
   transform: scale(1.1, 1.1);
 }
 .button-4 {
-  background-color: $red-light;
-  border-color: $red-light;
+  background-color: $red;
+  border-color: $red;
   color: white;
   background-image: linear-gradient(
     to bottom right,
-    $pink-light,
+    $red-light,
     $red-dark
   );
 }
 .button-4:hover {
   background-image: linear-gradient(
     to bottom right,
-    $pink-lighter,
+    $red-lighter,
     $red-dark
+  );
+  transform: scale(1.1, 1.1);
+}
+.button-5 {
+  background-color: $green;
+  border-color: $green;
+  color: white;
+  background-image: linear-gradient(
+    to bottom right,
+    $green-light,
+    $green-darker
+  );
+}
+.button-5:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    $green-lighter,
+    $green-darker
+  );
+  transform: scale(1.1, 1.1);
+}
+.button-6 {
+  background-color: $pink-light;
+  border-color: $pink-light;
+  color: white;
+  background-image: linear-gradient(
+    to bottom right,
+    $pink-light,
+    $pink-darker
+  );
+}
+.button-6:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    $pink-lighter,
+    $pink-darker
   );
   transform: scale(1.1, 1.1);
 }
