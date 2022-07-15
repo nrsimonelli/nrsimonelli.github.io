@@ -1,5 +1,5 @@
-import React from 'react';
-import './css/main.css';
+import React from 'react'
+import './css/main.css'
 
 const Connect = () => {
   return (
@@ -16,7 +16,6 @@ const Connect = () => {
         >
           Contact
         </a>
-
         <div className='connect-footer'>
           Developed by{' '}
           <a
@@ -30,7 +29,7 @@ const Connect = () => {
         </div>
       </div>
     </div>
-  ); // end return
-};
+  ) // end return
+}
 
-export default Connect;
+export default Connect

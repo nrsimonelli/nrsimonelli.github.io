@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   AiFillFire,
   AiFillBug,
@@ -6,14 +6,11 @@ import {
   AiFillThunderbolt,
   AiFillBulb,
   AiFillNotification,
-} from 'react-icons/ai';
+} from 'react-icons/ai'
 
 const About = () => {
   return (
-    <div
-      id='about'
-      className='about flex justify-center items-center'
-    >
+    <div id='about' className='about flex justify-center items-center'>
       <div className='container about-container flex flex-1 justify-start items-center'>
         <div className='about-title'>Who am I?</div>
 
@@ -29,12 +26,11 @@ const About = () => {
               <AiFillFire className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Full Stack</div>
+              <div>All In</div>
             </div>
             <div className='about-icon-text'>
               <div>
-                Development services spanning from front end design to
-                back end architecture.
+                Front-End developer with a passion for delivering excellence.
               </div>
             </div>
           </div>
@@ -53,8 +49,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Strong critical thinking skills and creative mindset
-                geared for optimal solutions.
+                Strong critical thinking skills and creative mindset geared for
+                optimal solutions.
               </div>
             </div>
           </div>
@@ -73,8 +69,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Exceptional initiative, emotional intelligence, and
-                drive to maximize team environments.
+                Strong collaborator with exceptional public speaking and
+                presentation skills.
               </div>
             </div>
           </div>
@@ -93,8 +89,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Leverages a diverse toolset, knowledge base, and
-                gathered expertise for constant value.
+                Cutting edge skills, diverse implementation experience,
+                incredible drive.
               </div>
             </div>
           </div>
@@ -109,12 +105,12 @@ const About = () => {
               <AiOutlineTeam className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>Agile</div>
+              <div>Team</div>
             </div>
             <div className='about-icon-text'>
               <div>
-                Dynamic, responsive, collaborative. Excels in agile
-                frameworks and related team structures.
+                Growth oriented. Actively pursues learning from and sharing with
+                others.
               </div>
             </div>
           </div>
@@ -133,15 +129,15 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Highly passionate and motivated. I love what I do and
-                enjoy doing it well.
+                Highly passionate and motivated. I love what I do and enjoy
+                doing it well.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

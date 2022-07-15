@@ -1,128 +1,91 @@
-import React from 'react';
+import React from 'react'
+
+const PortfolioData = [
+  {
+    title: 'Rival Dex',
+    description: 'Cloud Firestore, Auth, Nostalgia',
+    buttonText: 'View Project',
+    link: 'https://rival-dex.vercel.app/',
+    projectTag: '6',
+  },
+  {
+    title: 'Heroic Stats',
+    description: 'Data Visualization, TypeScript, RTK Query',
+    buttonText: 'View Project',
+    link: 'https://hero-wind.vercel.app/',
+    projectTag: '1',
+  },
+  {
+    title: 'Untitled',
+    description: 'Radix, Stitches, Utility based theme generation',
+    buttonText: 'View Project',
+    link: 'https://untitled-theme.vercel.app/',
+    projectTag: '5',
+  },
+  {
+    title: 'Scythe Bidder',
+    description: 'Web Sockets, Game Lobby, Dark Mode',
+    buttonText: 'View Project',
+    link: 'https://scythe-bidder.herokuapp.com/',
+    projectTag: '3',
+  },
+  {
+    title: 'Slow Coffee',
+    description: 'Mobile, Ignite, Delicious',
+    buttonText: 'Coming Soon',
+    link: false,
+    projectTag: '2',
+  },
+]
 
 const Projects = () => {
+  const getDirection = (i) => {
+    if (i % 2 === 0) {
+      return 'reg'
+    } else {
+      return 'rev'
+    }
+  }
+
   return (
     <div id='work' className='project-root'>
       <div className='project-container container'>
         <div className='project-title'>Recent Works</div>
-        {/* Hero Wind */}
-        <div className='project-card-container break-reg'>
-          <div className='project-card-image project-1 wave-stack'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>
-              Heroic Stats
+        {PortfolioData.map((entry, index) => (
+          <div
+            className={`project-card-container break-${getDirection(index)}`}
+          >
+            <div
+              className={`project-card-image project-${entry.projectTag}`}
+            ></div>
+            <div className='project-card-detail'>
+              <div className='project-card-detail-title'>{entry.title}</div>
+              <div className='project-card-detail-subtitle'>
+                {entry.description}
+              </div>
+              {entry.link ? (
+                <a
+                  className={`project-card-button button-${entry.projectTag} button`}
+                  href={entry.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {entry.buttonText}
+                </a>
+              ) : (
+                <a
+                  className={`project-card-button button-${entry.projectTag} button`}
+                  href='#work'
+                >
+                  {entry.buttonText}
+                </a>
+              )}
             </div>
-            <div className='project-card-detail-subtitle'>
-              Data Visualization, TypeScript, RTK Query
-            </div>
-            <a
-              className='project-card-button button-1 button'
-              href='https://hero-wind.vercel.app/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Project
-            </a>
           </div>
-        </div>
-        {/* Untitled */}
-        <div className='project-card-container break-rev'>
-          <div className='project-card-image project-5'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>
-              Untitled Theme
-            </div>
-            <div className='project-card-detail-subtitle'>
-              Utility based classes, Radix, Stitches
-            </div>
-            <a
-              className='project-card-button button-5 button'
-              href='https://untitled-theme.vercel.app/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Project
-            </a>
-          </div>
-        </div>
-        {/* Coffee */}
-        <div className='project-card-container break-reg'>
-          <div className='project-card-image project-2'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>
-              Slow Coffee
-            </div>
-            <div className='project-card-detail-subtitle'>
-              Mobile, Ignite, Delicious
-            </div>
-            <a
-              className='project-card-button button-2 button'
-              href='#work'
-            >
-              Coming Soon
-            </a>
-          </div>
-        </div>
-        {/* Scythe */}
-        <div className='project-card-container break-rev'>
-          <div className='project-card-image project-3'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>
-              Scythe Bidder
-            </div>
-            <div className='project-card-detail-subtitle'>
-              Web App, Sockets, Dark Mode
-            </div>
-            <a
-              className='project-card-button button-3 button'
-              href='https://scythe-bidder.herokuapp.com/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Project
-            </a>
-          </div>
-        </div>
-        {/* Gary Oak */}
-        <div className='project-card-container break-reg'>
-          <div className='project-card-image project-6'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>Rival Dex</div>
-            <div className='project-card-detail-subtitle'>
-              Advanced Redux, TypeScript, Nostalgia
-            </div>
-            <a
-              className='project-card-button button-6 button'
-              href='#work'
-            >
-              Coming Soon
-            </a>
-          </div>
-        </div>
-
-        {/* Sass Colors */}
-        {/* <div className='project-card-container break-reg'>
-          <div className='project-card-image project-4'></div>
-          <div className='project-card-detail'>
-            <div className='project-card-detail-title'>
-              Dark Magic
-            </div>
-            <div className='project-card-detail-subtitle'>
-              Web Design, Sass, Programmatic
-            </div>
-            <a
-              className='project-card-button button-4 button'
-              href='https://dark-magic.herokuapp.com/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Project
-            </a>
-          </div>
-        </div> */}
+        ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
