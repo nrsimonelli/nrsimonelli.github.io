@@ -1,25 +1,25 @@
-import React, { useEffect, useRef } from 'react';
-import './css/main.css';
-import 'aos/dist/aos.css';
-import AOS from 'aos';
-import anime from 'animejs';
+import React, { useEffect, useRef } from 'react'
+import './css/main.css'
+import 'aos/dist/aos.css'
+import AOS from 'aos'
+import anime from 'animejs'
 
-import About from './About';
-import Skills from './Skills';
-import Connect from './Connect';
-import Projects from './Projects';
+import About from './About'
+import Skills from './Skills'
+import Connect from './Connect'
+import Projects from './Projects'
 
-import { TiFlash } from 'react-icons/ti';
+import { TiFlash } from 'react-icons/ti'
 
 const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 3000,
-    });
-    AOS.refresh();
-  }, []);
+    })
+    AOS.refresh()
+  }, [])
 
-  const animationRef = useRef(null);
+  const animationRef = useRef(null)
 
   useEffect(() => {
     animationRef.current = anime({
@@ -27,31 +27,27 @@ const App = () => {
       easing: 'linear',
       duration: 3000,
       loop: false,
-      d: [
-        { value: [data1, data3] },
-        { value: data5 },
-        { value: data10 },
-      ],
-    });
+      d: [{ value: [data1, data3] }, { value: data5 }, { value: data10 }],
+    })
     animationRef.current = anime({
       targets: '.blue-target',
       easing: 'linear',
       duration: 3000,
-      delay: 3000,
+      delay: 1000,
       color: [
         '#0f172a',
-        '#1e293b',
-        '#334155',
-        '#831843',
-        '#9d174d',
-        '#be185d',
-        '#db2777',
-        '#ec4899',
-        '#f472b6',
+        '#0e1e3e',
+        '#0a2653',
+        '#042d68',
+        '#00347e',
+        '#003b94',
+        '#0042ab',
+        '#0948c1',
+        '#1d4ed8',
       ],
       loop: false,
-    });
-  }, []);
+    })
+  }, [])
 
   const waveEleven = (
     <svg className='morph' viewBox='0 0 900 600' width='100'>
@@ -61,16 +57,16 @@ const App = () => {
         strokeLinejoin='miter'
       ></path>
     </svg>
-  );
+  )
 
   const data1 =
-    'M0 210L25 230C50 250 100 290 150 310.5C200 331 250 332 300 335.7C350 339.3 400 345.7 450 347.5C500 349.3 550 346.7 600 344C650 341.3 700 338.7 750 335.7C800 332.7 850 329.3 875 327.7L900 326L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z';
+    'M0 210L25 230C50 250 100 290 150 310.5C200 331 250 332 300 335.7C350 339.3 400 345.7 450 347.5C500 349.3 550 346.7 600 344C650 341.3 700 338.7 750 335.7C800 332.7 850 329.3 875 327.7L900 326L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
   const data3 =
-    'M0 245L25 244.3C50 243.7 100 242.3 150 224.2C200 206 250 171 300 169.7C350 168.3 400 200.7 450 219C500 237.3 550 241.7 600 230.5C650 219.3 700 192.7 750 178.5C800 164.3 850 162.7 875 161.8L900 161L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z';
+    'M0 245L25 244.3C50 243.7 100 242.3 150 224.2C200 206 250 171 300 169.7C350 168.3 400 200.7 450 219C500 237.3 550 241.7 600 230.5C650 219.3 700 192.7 750 178.5C800 164.3 850 162.7 875 161.8L900 161L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
   const data5 =
-    'M0 143L25 152.5C50 162 100 181 150 192.2C200 203.3 250 206.7 300 194.5C350 182.3 400 154.7 450 144.7C500 134.7 550 142.3 600 162.5C650 182.7 700 215.3 750 228.3C800 241.3 850 234.7 875 231.3L900 228L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z';
+    'M0 143L25 152.5C50 162 100 181 150 192.2C200 203.3 250 206.7 300 194.5C350 182.3 400 154.7 450 144.7C500 134.7 550 142.3 600 162.5C650 182.7 700 215.3 750 228.3C800 241.3 850 234.7 875 231.3L900 228L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
   const data10 =
-    'M0 98L25 104.8C50 111.7 100 125.3 150 129.3C200 133.3 250 127.7 300 122.2C350 116.7 400 111.3 450 108.2C500 105 550 104 600 107.5C650 111 700 119 750 126.2C800 133.3 850 139.7 875 142.8L900 146L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z';
+    'M0 98L25 104.8C50 111.7 100 125.3 150 129.3C200 133.3 250 127.7 300 122.2C350 116.7 400 111.3 450 108.2C500 105 550 104 600 107.5C650 111 700 119 750 126.2C800 133.3 850 139.7 875 142.8L900 146L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z'
 
   return (
     <div className='root'>
@@ -112,22 +108,15 @@ const App = () => {
           </div>
         </div>
 
-        <div
-          id='title'
-          className='hero-container flex justify-center'
-        >
+        <div id='title' className='hero-container flex justify-center'>
           {waveEleven}
           <div className='hero-content hero container z-1 flex flex-1'>
             <h1>
-              <span data-aos='fade-in' data-aos-delay={1800}>
-                Always Be{' '}
-              </span>
-              <span data-aos='fade-in' data-aos-delay={1800}>
-                Coding{' '}
-              </span>
+              <span>Always Be </span>
+              <span>Coding </span>
             </h1>
             <div>
-              <span data-aos='zoom-in' data-aos-delay='300'>
+              <span data-aos='zoom-in' data-aos-delay='900'>
                 Hi, meet{' '}
                 <a href='#about' className='name blue-target'>
                   Nick Simonelli
@@ -137,7 +126,7 @@ const App = () => {
           </div>
           <div className='hero-content action flex justify-center'>
             <div
-              data-aos='zoom-out'
+              data-aos='zoom-in'
               data-aos-delay='3000'
               data-aos-anchor-placement='#title'
             >
@@ -153,7 +142,7 @@ const App = () => {
       <Skills />
       <Connect />
     </div>
-  ); // end return
-};
+  ) // end return
+}
 
-export default App;
+export default App

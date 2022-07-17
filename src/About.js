@@ -26,11 +26,12 @@ const About = () => {
               <AiFillFire className='about-icon-image' />
             </div>
             <div className='about-icon-title'>
-              <div>All In</div>
+              <div>Ambitious</div>
             </div>
             <div className='about-icon-text'>
               <div>
-                Front-End developer with a passion for delivering excellence.
+                Front-End developer with a passion for growth, excellence, and
+                forward progress.
               </div>
             </div>
           </div>
@@ -49,8 +50,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Strong critical thinking skills and creative mindset geared for
-                optimal solutions.
+                Critical thinker and versatile problem solver who finds
+                solutions rather than constraints.
               </div>
             </div>
           </div>
@@ -89,7 +90,7 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Cutting edge skills, diverse implementation experience,
+                Cutting edge skills, diverse implementation experience, and
                 incredible drive.
               </div>
             </div>
@@ -109,8 +110,8 @@ const About = () => {
             </div>
             <div className='about-icon-text'>
               <div>
-                Growth oriented. Actively pursues learning from and sharing with
-                others.
+                Effective collaborator invested in the wellbeing and success of
+                teammates.
               </div>
             </div>
           </div>
