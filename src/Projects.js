@@ -53,6 +53,7 @@ const Projects = () => {
         <div className='project-title'>Recent Works</div>
         {PortfolioData.map((entry, index) => (
           <div
+            key={`item-${index}`}
             className={`project-card-container break-${getDirection(index)}`}
           >
             <div
@@ -74,6 +75,7 @@ const Projects = () => {
                 </a>
               ) : (
                 <a
+                  key={`link-${index}`}
                   className={`project-card-button button-${entry.projectTag} button`}
                   href='#work'
                 >
