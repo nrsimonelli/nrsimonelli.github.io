@@ -3,7 +3,7 @@ import React from 'react'
 const PortfolioData = [
   {
     title: 'Rival Dex',
-    description: 'Cloud Firestore, Auth, Nostalgia',
+    description: 'Firestore, Authentication, Pokemon API',
     buttonText: 'View Project',
     link: 'https://rival-dex.vercel.app/',
     projectTag: '6',
@@ -17,7 +17,7 @@ const PortfolioData = [
   },
   {
     title: 'Untitled',
-    description: 'Radix, Stitches, Utility based theme generation',
+    description: 'Radix, Stitches, Utility Theme Creation',
     buttonText: 'View Project',
     link: 'https://untitled-theme.vercel.app/',
     projectTag: '5',
@@ -53,6 +53,7 @@ const Projects = () => {
         <div className='project-title'>Recent Works</div>
         {PortfolioData.map((entry, index) => (
           <div
+            key={`item-${index}`}
             className={`project-card-container break-${getDirection(index)}`}
           >
             <div
@@ -74,6 +75,7 @@ const Projects = () => {
                 </a>
               ) : (
                 <a
+                  key={`link-${index}`}
                   className={`project-card-button button-${entry.projectTag} button`}
                   href='#work'
                 >
