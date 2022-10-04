@@ -499,7 +499,7 @@ a {
   width: 100%;
 }
 
-@-webkit-keyframes overelay-show {
+@-webkit-keyframes overlay-show {
   0% {
     -webkit-opacity: 0;
     opacity: 0;
@@ -509,7 +509,7 @@ a {
     opacity: 1;
   }
 }
-@keyframes overelay-show {
+@keyframes overlay-show {
   0% {
     -webkit-opacity: 0;
     opacity: 0;
@@ -545,6 +545,26 @@ a {
     opacity: 1;
     -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes toast-show {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes toast-show {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .form-root {
@@ -583,10 +603,6 @@ a {
   width: 120px;
 }
 
-.fieldset-input:focus {
-  box-shadow: 0 0 0 2px #3b82f6;
-}
-
 .fieldset-input {
   all: unset;
   width: 100%;
@@ -600,6 +616,10 @@ a {
   padding-right: 10px;
   padding-left: 10px;
   text-align: left;
+}
+
+.fieldset-input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
 }
 
 .fieldset-input[data-valid=false] {
@@ -631,17 +651,13 @@ a {
 }
 
 .toast-root {
-  display: none;
   width: 300px;
   height: 50px;
   padding-top: 2rem;
   position: fixed;
   top: 0;
   z-index: 5;
-}
-
-.toast-root.open {
-  display: block;
+  animation: toast-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .toast-container {
@@ -661,6 +677,11 @@ a {
 .toast-container.error {
   background: #e11d48;
   color: white;
+}
+
+.toast-close {
+  cursor: pointer;
+  padding: 4px;
 }
 
 .root {

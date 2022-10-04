@@ -3,7 +3,7 @@ import React from 'react'
 const PortfolioData = [
   {
     title: 'Rival Dex',
-    description: 'Cloud Firestore, Auth, Nostalgia',
+    description: 'Firestore, Authentication, Pokemon API',
     buttonText: 'View Project',
     link: 'https://rival-dex.vercel.app/',
     projectTag: '6',
@@ -17,7 +17,7 @@ const PortfolioData = [
   },
   {
     title: 'Untitled',
-    description: 'Radix, Stitches, Utility based theme generation',
+    description: 'Radix, Stitches, Utility Theme Creation',
     buttonText: 'View Project',
     link: 'https://untitled-theme.vercel.app/',
     projectTag: '5',
