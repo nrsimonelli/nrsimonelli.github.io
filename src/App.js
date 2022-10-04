@@ -111,7 +111,7 @@ const App = () => {
         <div id='title' className='hero-container flex justify-center'>
           {waveEleven}
           <div className='hero-content hero container z-1 flex flex-1'>
-            <h1>
+            <h1 data-aos='fade-in' data-aos-delay='1500'>
               <span>Always Be </span>
               <span>Coding </span>
             </h1>
