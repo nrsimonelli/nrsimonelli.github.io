@@ -592,6 +592,7 @@ a {
 .fieldset {
   all: unset;
   display: flex;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
@@ -605,7 +606,6 @@ a {
 
 .fieldset-input {
   all: unset;
-  width: 100%;
   flex: 1;
   display: inline-flex;
   align-items: center;
