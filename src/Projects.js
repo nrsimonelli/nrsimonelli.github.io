@@ -2,6 +2,13 @@ import React from 'react'
 
 const PortfolioData = [
   {
+    title: 'Engage Plus',
+    description: 'Hooks, TS, Recharts',
+    buttonText: 'View Project',
+    link: 'https://engageplus.vercel.app/',
+    projectTag: '4',
+  },
+  {
     title: 'Rival Dex',
     description: 'Firestore, Authentication, Pokemon API',
     buttonText: 'View Project',

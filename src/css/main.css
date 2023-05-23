@@ -239,7 +239,7 @@ a {
   background-color: #3b82f6;
 }
 .project-card-container .project-4 {
-  background-color: #f85872;
+  background-color: #e11d48;
 }
 .project-card-container .project-5 {
   background-color: #10b981;
@@ -372,8 +372,8 @@ a {
 }
 
 .project-4 {
-  background: url("/images/white.png");
-  background-position: center;
+  background: url("/images/engage.png");
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
 }
